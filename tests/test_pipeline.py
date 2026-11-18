@@ -81,10 +81,15 @@ class TestZeroCostIncomeEngine(unittest.TestCase):
         self.assertEqual(schema_obj["@type"], "FAQPage")
         self.assertGreaterEqual(len(schema_obj["mainEntity"]), 2)
 
-        # Verify sitemap includes generated pages
+        # Verify sitemap files (xml, v2 xml, txt) and .nojekyll include generated pages
         sitemap_text = (dist / "sitemap.xml").read_text(encoding="utf-8")
+        sitemap_v2_text = (dist / "sitemap-v2.xml").read_text(encoding="utf-8")
+        sitemap_txt = (dist / "sitemap.txt").read_text(encoding="utf-8")
+        self.assertEqual(sitemap_text, sitemap_v2_text)
         self.assertIn(compare_files[0].name, sitemap_text)
         self.assertIn(alt_files[0].name, sitemap_text)
+        self.assertIn(compare_files[0].name, sitemap_txt)
+        self.assertTrue((dist / ".nojekyll").exists(), "Missing .nojekyll file")
 
         # Verify Google Search Console verification file is preserved in dist/
         gsc_file = dist / "google99ee1ec53fe652a5.html"
