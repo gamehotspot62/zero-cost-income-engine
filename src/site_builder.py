@@ -619,6 +619,13 @@ def _build_sitemap_and_robots(
         f"User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: {base_url}/sitemap.xml\n",
         encoding="utf-8",
     )
+    verify_file = str(settings.get("google_site_verification_file", "")).strip()
+    if verify_file:
+        safe_name = Path(verify_file).name
+        (dist_dir / safe_name).write_text(
+            f"google-site-verification: {safe_name}\n",
+            encoding="utf-8",
+        )
 
 
 def build_full_site(
