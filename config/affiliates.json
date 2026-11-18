@@ -1,0 +1,395 @@
+{
+  "tools": [
+    {
+      "id": "google-gemini-api",
+      "name": "Google Gemini API (AI Studio)",
+      "category": "AI & LLM APIs",
+      "tagline": "Generous permanent free tier with multimodal reasoning and long context windows.",
+      "free_tier_limits": "Free tier via Google AI Studio (RPM/RPD limits, no credit card required to start)",
+      "paid_start_price": "$0.10-$0.30 / 1M input tokens (Flash tier)",
+      "affiliate_url": "https://aistudio.google.com/?utm_source=stackpulse&utm_medium=pseo",
+      "commission_notes": "Partner / Cloud referral credit or traffic funnel to AI templates",
+      "pros": [
+        "No upfront credit card needed for AI Studio API key",
+        "Native 1M+ token context and structured JSON output",
+        "Fast Flash models ideal for automated pipelines"
+      ],
+      "cons": [
+        "Free tier prompts may be subject to standard API terms",
+        "Strict RPM bursts require backoff in batch loops"
+      ],
+      "best_for": "Autonomous content synthesis, structured extraction, and multimodal agents",
+      "open_source_alt": "Ollama + Qwen/Llama local",
+      "score": 9.6,
+      "estimated_epc_usd": 0.45
+    },
+    {
+      "id": "groq-cloud",
+      "name": "Groq Cloud API",
+      "category": "AI & LLM APIs",
+      "tagline": "Ultra-low-latency LPU inference for open-weight models with an OpenAI-compatible free tier.",
+      "free_tier_limits": "Free developer tier with daily token/request caps across Llama & Mixtral models",
+      "paid_start_price": "$0.05-$0.59 / 1M tokens pay-as-you-go",
+      "affiliate_url": "https://console.groq.com/?utm_source=stackpulse&utm_medium=pseo",
+      "commission_notes": "Ecosystem builder funnel & developer tool kit upsells",
+      "pros": [
+        "Drop-in OpenAI SDK compatibility",
+        "Sub-second inference speeds for real-time workflows",
+        "Zero-cost key provisioning"
+      ],
+      "cons": [
+        "Smaller context windows than Gemini on some models",
+        "Rate limits tighten during peak global usage"
+      ],
+      "best_for": "High-speed text classification, summaries, and JSON transforms",
+      "open_source_alt": "vLLM / llama.cpp",
+      "score": 9.3,
+      "estimated_epc_usd": 0.4
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "category": "AI & LLM APIs",
+      "tagline": "Unified API gateway routing across 100+ free and paid LLMs with automatic fallbacks.",
+      "free_tier_limits": "Multiple `:free` model endpoints (rate-limited RPM/RPD, $0 required)",
+      "paid_start_price": "Pay-per-token pass-through pricing",
+      "affiliate_url": "https://openrouter.ai/?utm_source=stackpulse&utm_medium=pseo",
+      "commission_notes": "Developer affiliate & template monetization funnel",
+      "pros": [
+        "Single API key accesses dozens of free community models",
+        "Built-in provider failover and routing",
+        "Transparent token telemetry"
+      ],
+      "cons": [
+        "Free model availability rotates frequently",
+        "Extra network hop vs direct provider API"
+      ],
+      "best_for": "Multi-model A/B testing and zero-cost failover pipelines",
+      "open_source_alt": "LiteLLM Proxy",
+      "score": 9.1,
+      "estimated_epc_usd": 0.55
+    },
+    {
+      "id": "huggingface-inference",
+      "name": "Hugging Face Inference",
+      "category": "AI & LLM APIs",
+      "tagline": "Serverless inference endpoints for open-source models, embeddings, and Spaces hosting.",
+      "free_tier_limits": "Free rate-limited serverless inference + free CPU Spaces",
+      "paid_start_price": "$9/mo PRO plan for higher credits",
+      "affiliate_url": "https://huggingface.co/pricing?utm_source=stackpulse&utm_medium=pseo",
+      "commission_notes": "Referral funnel to Hugging Face PRO & AI starter kits",
+      "pros": [
+        "Massive catalog of specialized open-source models",
+        "Free static/Gradio demo hosting via Spaces",
+        "Great for embeddings and classification"
+      ],
+      "cons": [
+        "Cold starts on less popular models",
+        "Lower throughput on free tier"
+      ],
+      "best_for": "Embeddings, sentiment scoring, and open-model prototyping",
+      "open_source_alt": "Self-hosted Transformers",
+      "score": 8.7,
+      "estimated_epc_usd": 0.35
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "category": "Serverless Databases",
+      "tagline": "Open-source Postgres platform with built-in auth, edge functions, and pgvector.",
+      "free_tier_limits": "2 active free projects, 500MB database, 50,000 monthly active users, 5GB egress",
+      "paid_start_price": "$25/mo Pro plan",
+      "affiliate_url": "https://supabase.com/?ref=stackpulse_replace_me",
+      "commission_notes": "Partner / SaaS starter kit affiliate (20%-30% ecosystem tools)",
+      "pros": [
+        "Full PostgreSQL with Row-Level Security and pgvector",
+        "Instant REST and GraphQL APIs out of the box",
+        "Self-hostable open-source stack"
+      ],
+      "cons": [
+        "Free projects pause after 7 days of inactivity",
+        "Jumps straight from $0 to $25/mo for Pro"
+      ],
+      "best_for": "Full-stack micro-SaaS MVPs needing auth + Postgres + vectors",
+      "open_source_alt": "PocketBase / Self-hosted Supabase",
+      "score": 9.5,
+      "estimated_epc_usd": 1.25
+    },
+    {
+      "id": "neon-postgres",
+      "name": "Neon Serverless Postgres",
+      "category": "Serverless Databases",
+      "tagline": "Serverless Postgres with instant database branching and scale-to-zero compute.",
+      "free_tier_limits": "0.5 GB storage, 100 CU-hours/month compute, 10 branches per project",
+      "paid_start_price": "$19/mo Launch plan",
+      "affiliate_url": "https://neon.tech/?ref=stackpulse_replace_me",
+      "commission_notes": "Developer infra partner / starter template upsells",
+      "pros": [
+        "Git-like instant database branching for CI/CD",
+        "Scales to zero automatically when idle",
+        "Sub-second cold wakeups over HTTP/WebSocket"
+      ],
+      "cons": [
+        "Compute hour quota can deplete under heavy cron polling",
+        "No built-in user auth like Supabase"
+      ],
+      "best_for": "Serverless Next.js/Workers backends and automated CI preview branches",
+      "open_source_alt": "Postgres + PgBouncer",
+      "score": 9.2,
+      "estimated_epc_usd": 0.95
+    },
+    {
+      "id": "turso-sqlite",
+      "name": "Turso (libSQL)",
+      "category": "Serverless Databases",
+      "tagline": "Edge-replicated SQLite database built on libSQL for ultra-low-latency reads.",
+      "free_tier_limits": "Up to 500 databases, 9 GB total storage, 1B row reads/mo",
+      "paid_start_price": "$29/mo Scaler plan",
+      "affiliate_url": "https://turso.tech/?ref=stackpulse_replace_me",
+      "commission_notes": "High free quota makes conversion sticky for SaaS founders",
+      "pros": [
+        "Massive 1 billion free row reads per month",
+        "Database-per-tenant architecture works out of the box",
+        "Embedded replica support for zero-latency reads"
+      ],
+      "cons": [
+        "SQLite concurrency limits on write-heavy workloads",
+        "Smaller ecosystem than standard Postgres"
+      ],
+      "best_for": "Programmatic SEO sites, multi-tenant SaaS, and edge-cached directories",
+      "open_source_alt": "libSQL / SQLite",
+      "score": 9.4,
+      "estimated_epc_usd": 0.85
+    },
+    {
+      "id": "cloudflare-d1",
+      "name": "Cloudflare D1",
+      "category": "Serverless Databases",
+      "tagline": "Native serverless SQLite inside Cloudflare Workers with zero egress fees.",
+      "free_tier_limits": "5 GB storage, 5M rows read/day, 100k rows written/day",
+      "paid_start_price": "$5/mo Workers Paid base plan",
+      "affiliate_url": "https://developers.cloudflare.com/d1/?utm_source=stackpulse",
+      "commission_notes": "Low $5 paid jump makes edge stack migration tutorials high-converting",
+      "pros": [
+        "Co-located directly with Cloudflare Workers",
+        "Predictable $5/mo entry tier beyond free limits",
+        "Zero network egress charges"
+      ],
+      "cons": [
+        "Tightly coupled to Cloudflare Workers runtime",
+        "Single primary region write throughput"
+      ],
+      "best_for": "Lightweight edge APIs, link trackers, and Cloudflare Pages backends",
+      "open_source_alt": "Miniflare local SQLite",
+      "score": 9.0,
+      "estimated_epc_usd": 0.6
+    },
+    {
+      "id": "cloudflare-pages",
+      "name": "Cloudflare Pages & Workers",
+      "category": "Cloud Hosting & Edge",
+      "tagline": "Unlimited-bandwidth static hosting plus 100k/day serverless edge worker invocations.",
+      "free_tier_limits": "Unlimited sites & bandwidth, 500 builds/mo, 100k Worker requests/day",
+      "paid_start_price": "$5/mo Workers Paid",
+      "affiliate_url": "https://pages.cloudflare.com/?utm_source=stackpulse",
+      "commission_notes": "Core zero-cost hosting anchor for pSEO & affiliate funnels",
+      "pros": [
+        "Truly unlimited free bandwidth (no surprise traffic bills)",
+        "Global edge CDN across 300+ cities",
+        "Commercial usage allowed on free tier"
+      ],
+      "cons": [
+        "500 builds/mo cap if deploying dozens of times daily",
+        "Node.js compatibility requires nodejs_compat flag"
+      ],
+      "best_for": "High-traffic programmatic SEO sites and $0 static SaaS frontends",
+      "open_source_alt": "Caddy / Nginx on VPS",
+      "score": 9.8,
+      "estimated_epc_usd": 0.7
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "category": "Cloud Hosting & Edge",
+      "tagline": "Zero-config Next.js and frontend deployment platform with preview URLs.",
+      "free_tier_limits": "Hobby plan: 100 GB bandwidth/mo, non-commercial personal projects",
+      "paid_start_price": "$20/seat/mo Pro plan",
+      "affiliate_url": "https://vercel.com/?utm_source=stackpulse",
+      "commission_notes": "High intent developer hosting; Pro upgrades often needed for commercial apps",
+      "pros": [
+        "Best-in-class Next.js & Astro developer experience",
+        "Instant Git PR preview deployments",
+        "Built-in edge caching and analytics"
+      ],
+      "cons": [
+        "Hobby tier prohibits commercial monetization",
+        "Bandwidth overages on Pro can be costly at high scale"
+      ],
+      "best_for": "Personal portfolios, non-commercial prototypes, and Next.js teams on Pro",
+      "open_source_alt": "Coolify / SST OpenNext",
+      "score": 8.9,
+      "estimated_epc_usd": 1.1
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "category": "Cloud Hosting & Edge",
+      "tagline": "Managed cloud platform for static sites, Python/Node web services, and cron jobs.",
+      "free_tier_limits": "100 GB bandwidth for static sites; 750 free web service hours (spins down idle)",
+      "paid_start_price": "$7/mo Starter web service",
+      "affiliate_url": "https://render.com/?ref=stackpulse_replace_me",
+      "commission_notes": "Recurring cloud hosting affiliate / referral credits",
+      "pros": [
+        "Supports full Docker, Python, and background workers",
+        "Simple $7/mo step up when scaling past free tier",
+        "Clean Blueprints (`render.yaml`) infrastructure-as-code"
+      ],
+      "cons": [
+        "Free web services sleep after 15 mins of inactivity",
+        "Free Postgres expires after 30 days"
+      ],
+      "best_for": "Long-running Python APIs, bots, and full-stack container deployments",
+      "open_source_alt": "Dokku / Coolify",
+      "score": 8.8,
+      "estimated_epc_usd": 1.4
+    },
+    {
+      "id": "lemon-squeezy",
+      "name": "Lemon Squeezy",
+      "category": "Payments & MoR",
+      "tagline": "All-in-one Merchant of Record handling global VAT/sales tax, SaaS subscriptions, and affiliates.",
+      "free_tier_limits": "$0/month fixed cost; 5% + $0.50 only when a sale happens",
+      "paid_start_price": "Transaction-only pricing (no monthly subscription)",
+      "affiliate_url": "https://www.lemonsqueezy.com/?aff=stackpulse_replace_me",
+      "commission_notes": "Free to join MoR + built-in affiliate marketplace commissions (10%-50%)",
+      "pros": [
+        "Zero monthly fee and automatic global tax/VAT compliance",
+        "Built-in affiliate program engine for digital products",
+        "Hosted checkout links require zero backend code"
+      ],
+      "cons": [
+        "Higher per-transaction fee than raw Stripe",
+        "Payout verification takes a few days on first sales"
+      ],
+      "best_for": "Selling digital blueprints, SaaS subscriptions, and license keys globally",
+      "open_source_alt": "Stripe + custom tax / Polar.sh",
+      "score": 9.6,
+      "estimated_epc_usd": 2.1
+    },
+    {
+      "id": "gumroad",
+      "name": "Gumroad",
+      "category": "Payments & MoR",
+      "tagline": "Zero-upfront marketplace for ebooks, Notion templates, code boilerplates, and prompts.",
+      "free_tier_limits": "$0/month fixed cost; flat 10% fee on direct sales",
+      "paid_start_price": "Pay-as-you-earn fee only",
+      "affiliate_url": "https://hotspot41.gumroad.com",
+      "commission_notes": "Massive affiliate marketplace where creators pay 10%-50% per sale",
+      "pros": [
+        "Built-in organic discovery marketplace traffic",
+        "Anyone can promote existing products as an affiliate immediately",
+        "Launches a checkout page in under 5 minutes"
+      ],
+      "cons": [
+        "10% platform fee plus payment processing on sales",
+        "Limited SaaS subscription webhooks vs Lemon Squeezy"
+      ],
+      "best_for": "Rapidly launching $9-$49 digital playbooks, templates, and starter repos",
+      "open_source_alt": "Payhip / Polar.sh",
+      "score": 9.1,
+      "estimated_epc_usd": 1.65
+    },
+    {
+      "id": "stripe-checkout",
+      "name": "Stripe Payment Links",
+      "category": "Payments & MoR",
+      "tagline": "Instant no-code checkout URLs with industry-standard 2.9% + $0.30 transaction fees.",
+      "free_tier_limits": "$0/month fixed fee; pay only per successful transaction",
+      "paid_start_price": "2.9% + $0.30 per card charge (US)",
+      "affiliate_url": "https://stripe.com/payments/payment-links?utm_source=stackpulse",
+      "commission_notes": "Best conversion rate for B2B sponsor slots and consulting retainers",
+      "pros": [
+        "Lowest transaction fees among major processors",
+        "Supports Apple Pay, Google Pay, and subscriptions out of the box",
+        "Trusted enterprise checkout UX"
+      ],
+      "cons": [
+        "Not a Merchant of Record (you manage sales tax registration)",
+        "Strict regional availability depending on country"
+      ],
+      "best_for": "Selling direct B2B newsletter sponsorships and high-ticket services",
+      "open_source_alt": "BTCPay Server / Polar.sh",
+      "score": 9.4,
+      "estimated_epc_usd": 1.2
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "category": "Automation & Workflows",
+      "tagline": "Event-driven CI/CD and cron compute runner powering zero-server autonomous agents.",
+      "free_tier_limits": "Unlimited minutes on public repos; 2,000 mins/mo on private repos",
+      "paid_start_price": "$0.008/min beyond private free quota",
+      "affiliate_url": "https://github.com/features/actions?utm_source=stackpulse",
+      "commission_notes": "Core zero-cost compute engine replacing paid VPS/Zapier subscriptions",
+      "pros": [
+        "Unlimited Linux runner compute for public repositories",
+        "Native cron scheduler and repository secrets vault",
+        "Can run Python, Playwright, Node, and commit directly to Git"
+      ],
+      "cons": [
+        "Cron triggers may jitter 5-15 minutes during peak UTC hours",
+        "6-hour max job duration limit"
+      ],
+      "best_for": "Autonomous daily scraping, LLM pipelines, and static pSEO site rebuilds",
+      "open_source_alt": "Act / Woodpecker CI",
+      "score": 9.9,
+      "estimated_epc_usd": 0.5
+    },
+    {
+      "id": "make-automation",
+      "name": "Make (Integromat)",
+      "category": "Automation & Workflows",
+      "tagline": "Visual no-code workflow builder connecting 1,800+ SaaS apps and webhooks.",
+      "free_tier_limits": "1,000 operations/month free forever, 2 active scenarios",
+      "paid_start_price": "$9/mo Core plan (10,000 ops)",
+      "affiliate_url": "https://www.make.com/en/register?pc=stackpulse_replace_me",
+      "commission_notes": "20% recurring affiliate commission for 12-24 months via PartnerStack",
+      "pros": [
+        "Much more generous free tier than Zapier",
+        "Visual JSON mapping, iterators, and HTTP webhook modules",
+        "High-converting recurring SaaS affiliate program"
+      ],
+      "cons": [
+        "2-scenario limit on free plan",
+        "Complex logic is harder to version-control than Python"
+      ],
+      "best_for": "No-code social auto-posting, CRM lead routing, and webhook glue",
+      "open_source_alt": "n8n / Activepieces",
+      "score": 9.2,
+      "estimated_epc_usd": 2.4
+    },
+    {
+      "id": "n8n-cloud",
+      "name": "n8n Workflow Automation",
+      "category": "Automation & Workflows",
+      "tagline": "Fair-code visual + JavaScript/Python workflow engine with AI agent nodes.",
+      "free_tier_limits": "100% free self-hosted Community Edition; 14-day cloud trial",
+      "paid_start_price": "€20/mo Starter Cloud (or $0 self-hosted)",
+      "affiliate_url": "https://n8n.io/?ps_partner_key=stackpulse_replace_me",
+      "commission_notes": "30% recurring commission for 12 months via PartnerStack",
+      "pros": [
+        "Native LangChain/AI agent nodes and custom code execution",
+        "Self-hostable with zero execution limits",
+        "Strong 30% recurring B2B affiliate payout"
+      ],
+      "cons": [
+        "Cloud plan has no permanent free tier (requires self-hosting for $0)",
+        "Needs container host if not using local/free VPS"
+      ],
+      "best_for": "Complex multi-step AI agent orchestrations and B2B workflow consulting",
+      "open_source_alt": "n8n Self-Hosted / Activepieces",
+      "score": 9.4,
+      "estimated_epc_usd": 2.8
+    }
+  ]
+}
