@@ -138,5 +138,25 @@
     },
     "product_compiled": "products/zero-cost-stack-blueprint.md",
     "newsletter_status": "saved-locally"
+  },
+  {
+    "timestamp_utc": "2026-11-18T19:59:58.268728+00:00",
+    "mode": "full",
+    "offline": false,
+    "ingestion_mode": "live-web",
+    "signals_collected": 18,
+    "llm_usage": {
+      "gemini": 0,
+      "groq": 0,
+      "deterministic": 39
+    },
+    "site_stats": {
+      "comparison_pages": 21,
+      "alternatives_pages": 17,
+      "redirect_pages": 17,
+      "total_indexable_urls": 41
+    },
+    "product_compiled": "products/zero-cost-stack-blueprint.md",
+    "newsletter_status": "saved-locally"
   }
 ]
