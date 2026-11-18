@@ -17,10 +17,12 @@ class ZeroCostLLMBrain:
         self.offline = offline
         llm_cfg = settings.get("llm", {})
         self.priority = llm_cfg.get("provider_priority", ["gemini", "groq", "deterministic"])
-        self.gemini_model = llm_cfg.get("gemini_model", "gemini-2.5-flash")
+        self.gemini_model = llm_cfg.get("gemini_model", "gemini-3.5-flash-lite")
         self.groq_model = llm_cfg.get("groq_model", "llama-3.3-70b-versatile")
-        self.max_live_calls = int(llm_cfg.get("max_live_calls_per_run", 6))
-        self.timeout = int(llm_cfg.get("timeout_seconds", 15))
+        self.max_live_calls = int(
+            llm_cfg.get("max_live_llm_calls_per_run", llm_cfg.get("max_live_calls_per_run", 6))
+        )
+        self.timeout = int(llm_cfg.get("timeout_seconds", 25))
         self.live_calls_used = 0
         self.providers_used: dict[str, int] = {"gemini": 0, "groq": 0, "deterministic": 0}
 
@@ -48,7 +50,10 @@ class ZeroCostLLMBrain:
         if not candidates:
             return None
         parts = candidates[0].get("content", {}).get("parts", [])
-        return parts[0].get("text") if parts else None
+        for part in reversed(parts):
+            if not part.get("thought") and part.get("text"):
+                return str(part["text"])
+        return None
 
     def _call_groq(self, prompt: str) -> str | None:
         api_key = os.environ.get("GROQ_API_KEY", "").strip()
