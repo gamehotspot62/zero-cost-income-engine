@@ -19,10 +19,10 @@
       "groq",
       "deterministic"
     ],
-    "gemini_model": "gemini-2.5-flash",
+    "gemini_model": "gemini-3.5-flash-lite",
     "groq_model": "llama-3.3-70b-versatile",
     "max_live_llm_calls_per_run": 6,
-    "timeout_seconds": 15
+    "timeout_seconds": 25
   },
   "signals": {
     "hn_story_limit": 12,
