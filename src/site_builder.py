@@ -600,23 +600,29 @@ def _build_sitemap_and_robots(
     dist_dir: Path,
 ) -> None:
     base_url = settings.get("base_url", "https://example.com").rstrip("/")
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    urls = ["index.html", "newsletter/latest-issue.html"]
-    urls.extend(c["path"] for c in comparisons)
-    urls.extend(a["path"] for a in alternatives)
+    rel_paths = ["index.html", "newsletter/latest-issue.html"]
+    rel_paths.extend(c["path"] for c in comparisons)
+    rel_paths.extend(a["path"] for a in alternatives)
+    full_urls = [f"{base_url}/"] + [f"{base_url}/{path}" for path in rel_paths]
 
     url_entries = "\n".join(
-        f"  <url><loc>{html.escape(base_url + '/' + path)}</loc><lastmod>{today}</lastmod></url>"
-        for path in urls
+        f"  <url>\n    <loc>{html.escape(loc)}</loc>\n  </url>"
+        for loc in full_urls
     )
-    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+    sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {url_entries}
 </urlset>
 """
-    (dist_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (dist_dir / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
+    (dist_dir / "sitemap-v2.xml").write_text(sitemap_xml, encoding="utf-8")
+    (dist_dir / "sitemap.txt").write_text("\n".join(full_urls) + "\n", encoding="utf-8")
+    (dist_dir / ".nojekyll").write_text("", encoding="utf-8")
     (dist_dir / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\nDisallow: /go/\nSitemap: {base_url}/sitemap.xml\n",
+        f"User-agent: *\nAllow: /\nDisallow: /go/\n"
+        f"Sitemap: {base_url}/sitemap.xml\n"
+        f"Sitemap: {base_url}/sitemap-v2.xml\n"
+        f"Sitemap: {base_url}/sitemap.txt\n",
         encoding="utf-8",
     )
     verify_file = str(settings.get("google_site_verification_file", "")).strip()
@@ -660,5 +666,5 @@ def build_full_site(
         "comparison_pages": len(comparisons),
         "alternatives_pages": len(alternatives),
         "redirect_pages": len(redirect_routes),
-        "total_indexable_urls": 2 + len(comparisons) + len(alternatives),
+        "total_indexable_urls": 3 + len(comparisons) + len(alternatives),
     }
