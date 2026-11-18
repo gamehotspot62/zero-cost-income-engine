@@ -1,0 +1,72 @@
+name: Autonomous Zero-Cost Income Agent
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Runs automatically every day at 06:00 UTC
+  workflow_dispatch:    # Also allows manual one-click trigger in GitHub UI
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-monetize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Autonomous Income Agent Pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          python -m src.agent_pipeline --mode full
+
+      - name: Run Automated Verification Tests
+        run: |
+          python -m unittest discover -s tests -v
+
+      - name: Commit Updated Run History & Signals
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(agent): autonomous daily update [skip ci]" && git push)
+
+      - name: Upload Static Site Artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      # Optional alternative: deploy to Cloudflare Pages for unlimited bandwidth ($0):
+      # - name: Publish to Cloudflare Pages
+      #   if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+      #   uses: cloudflare/pages-action@v1
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     projectName: 'stackpulse-ai'
+      #     directory: 'dist'
+
+  deploy-pages:
+    needs: build-and-monetize
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages ($0 Hosting)
+        id: deployment
+        uses: actions/deploy-pages@v4
