@@ -1,0 +1,38 @@
+{
+  "site_name": "StackPulse AI",
+  "site_tagline": "Autonomous Zero-Cost Developer Stack & Free-Tier Intelligence",
+  "base_url": "https://gamehotspot62.github.io/zero-cost-income-engine",
+  "author_handle": "@stackpulse_ai",
+  "monetization": {
+    "featured_sponsor_checkout_url": "https://hotspot41.gumroad.com/l/lcpwob",
+    "featured_sponsor_price_usd": 49,
+    "digital_product_checkout_url": "https://hotspot41.gumroad.com/l/ryqznu",
+    "digital_product_title": "2026 Zero-Cost Cloud & AI Stack Blueprint + Automation Prompt Pack",
+    "digital_product_price_usd": 19,
+    "newsletter_signup_action": "https://buttondown.com/your-newsletter-handle",
+    "newsletter_provider_webhook_env": "BUTTONDOWN_API_KEY"
+  },
+  "llm": {
+    "provider_priority": [
+      "gemini",
+      "groq",
+      "deterministic"
+    ],
+    "gemini_model": "gemini-2.5-flash",
+    "groq_model": "llama-3.3-70b-versatile",
+    "max_live_llm_calls_per_run": 6,
+    "timeout_seconds": 15
+  },
+  "signals": {
+    "hn_story_limit": 12,
+    "github_repo_limit": 8,
+    "timeout_seconds": 8
+  },
+  "categories": [
+    "AI & LLM APIs",
+    "Serverless Databases",
+    "Cloud Hosting & Edge",
+    "Payments & MoR",
+    "Automation & Workflows"
+  ]
+}
