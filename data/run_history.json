@@ -100,11 +100,11 @@
     "newsletter_status": "saved-locally"
   },
   {
-    "timestamp_utc": "2026-11-18T19:15:18.879725+00:00",
+    "timestamp_utc": "2026-11-18T19:43:30.039570+00:00",
     "mode": "full",
-    "offline": false,
-    "ingestion_mode": "live-web",
-    "signals_collected": 18,
+    "offline": true,
+    "ingestion_mode": "offline-seed",
+    "signals_collected": 5,
     "llm_usage": {
       "gemini": 0,
       "groq": 0,
