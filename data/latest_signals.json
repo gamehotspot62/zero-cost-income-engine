@@ -1,0 +1,48 @@
+{
+  "fetched_at": "2026-11-18T19:14:00.578060+00:00",
+  "ingestion_mode": "offline-seed",
+  "signal_count": 5,
+  "errors": [],
+  "signals": [
+    {
+      "source": "Curated Intelligence",
+      "title": "Zero-Cost AI Workflows with GitHub Actions & Free LLM Tiers",
+      "url": "https://github.com/features/actions",
+      "score": 342,
+      "topic": "Automation & Workflows",
+      "summary": "Builders are replacing paid VPS cron servers with public-repo GitHub Actions workflows paired with Gemini and Groq free APIs."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "Programmatic SEO Directories Built on Serverless SQLite & Cloudflare Pages",
+      "url": "https://pages.cloudflare.com/",
+      "score": 289,
+      "topic": "Cloud Hosting & Edge",
+      "summary": "Unlimited free static bandwidth on Cloudflare Pages enables zero-cost comparison hubs targeting high-intent SaaS buyer keywords."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "Merchant of Record Platforms (Lemon Squeezy vs Gumroad) for Indie Digital Products",
+      "url": "https://www.lemonsqueezy.com/",
+      "score": 256,
+      "topic": "Payments & MoR",
+      "summary": "Zero-monthly-fee Merchant of Record tools remove upfront incorporation and VAT hurdles for solo digital entrepreneurs."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "Serverless Postgres & Edge SQLite Free Tier Benchmarks (Supabase vs Neon vs Turso)",
+      "url": "https://turso.tech/",
+      "score": 218,
+      "topic": "Serverless Databases",
+      "summary": "Free-tier limits across modern databases now support millions of reads per month before requiring a $19-$29 upgrade."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "High-Speed Inference Routing Across Free-Tier LLM APIs",
+      "url": "https://openrouter.ai/",
+      "score": 195,
+      "topic": "AI & LLM APIs",
+      "summary": "Multi-provider fallback chains prevent rate-limit downtime when operating autonomous content pipelines at $0 API cost."
+    }
+  ]
+}
