@@ -120,11 +120,11 @@
     "newsletter_status": "saved-locally"
   },
   {
-    "timestamp_utc": "2026-11-18T19:47:24.481851+00:00",
+    "timestamp_utc": "2026-11-18T19:59:01.773409+00:00",
     "mode": "full",
-    "offline": false,
-    "ingestion_mode": "live-web",
-    "signals_collected": 17,
+    "offline": true,
+    "ingestion_mode": "offline-seed",
+    "signals_collected": 5,
     "llm_usage": {
       "gemini": 0,
       "groq": 0,
@@ -134,7 +134,7 @@
       "comparison_pages": 21,
       "alternatives_pages": 17,
       "redirect_pages": 17,
-      "total_indexable_urls": 40
+      "total_indexable_urls": 41
     },
     "product_compiled": "products/zero-cost-stack-blueprint.md",
     "newsletter_status": "saved-locally"
