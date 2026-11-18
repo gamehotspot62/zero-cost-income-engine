@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import subprocess
+import time
 from pathlib import Path
 from typing import Any
 
@@ -142,6 +144,25 @@ def _run_gh(args: list[str], input_bytes: bytes | None = None) -> subprocess.Com
     )
 
 
+def _run_gh_retry(
+    args: list[str],
+    input_bytes: bytes | None = None,
+    attempts: int = 3,
+) -> subprocess.CompletedProcess[bytes]:
+    last = _run_gh(args, input_bytes=input_bytes)
+    for attempt in range(1, attempts):
+        if last.returncode == 0:
+            return last
+        time.sleep(2 * attempt)
+        last = _run_gh(args, input_bytes=input_bytes)
+    return last
+
+
+def _git_blob_sha(raw_bytes: bytes) -> str:
+    header = f"blob {len(raw_bytes)}\0".encode("utf-8")
+    return hashlib.sha1(header + raw_bytes).hexdigest()
+
+
 def _iter_deploy_files(project_root: Path) -> list[Path]:
     files: list[Path] = []
     for path in sorted(project_root.rglob("*")):
@@ -189,16 +210,34 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
         settings["base_url"] = expected_base
         _write_json(settings_path, settings)
 
+    remote_shas: dict[str, str] = {}
+    if not repo_created:
+        tree_res = _run_gh_retry(["api", f"repos/{full_repo}/git/trees/HEAD?recursive=1"])
+        if tree_res.returncode == 0:
+            try:
+                tree_data = json.loads(tree_res.stdout.decode("utf-8", "replace"))
+                for item in tree_data.get("tree", []):
+                    if item.get("type") == "blob" and item.get("path") and item.get("sha"):
+                        remote_shas[item["path"]] = item["sha"]
+            except ValueError:
+                remote_shas = {}
+
+    deploy_files = _iter_deploy_files(project_root)
     uploaded_files: list[str] = []
-    for file_path in _iter_deploy_files(project_root):
+    for file_path in deploy_files:
         rel = file_path.relative_to(project_root).as_posix()
-        raw_b64 = base64.b64encode(file_path.read_bytes()).decode("ascii")
+        raw_bytes = file_path.read_bytes()
+        local_sha = _git_blob_sha(raw_bytes)
+        existing_sha = remote_shas.get(rel)
+        if existing_sha == local_sha:
+            continue
 
-        existing_sha = None
-        check = _run_gh(["api", f"repos/{full_repo}/contents/{rel}", "--jq", ".sha"])
-        if check.returncode == 0:
-            existing_sha = check.stdout.decode("utf-8", "replace").strip()
+        if existing_sha is None and not repo_created:
+            check = _run_gh_retry(["api", f"repos/{full_repo}/contents/{rel}", "--jq", ".sha"])
+            if check.returncode == 0:
+                existing_sha = check.stdout.decode("utf-8", "replace").strip()
 
+        raw_b64 = base64.b64encode(raw_bytes).decode("ascii")
         payload: dict[str, Any] = {
             "message": f"chore(setup): sync {rel}",
             "content": raw_b64,
@@ -206,7 +245,7 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
         if existing_sha:
             payload["sha"] = existing_sha
 
-        put = _run_gh(
+        put = _run_gh_retry(
             [
                 "api",
                 "--method",
@@ -228,19 +267,20 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
         input_bytes=pages_payload,
     )
     if pages_res.returncode != 0:
-        pages_res = _run_gh(
+        pages_res = _run_gh_retry(
             ["api", "--method", "PUT", f"repos/{full_repo}/pages", "--input", "-"],
             input_bytes=pages_payload,
         )
 
     # Trigger initial workflow run
-    wf_res = _run_gh(["workflow", "run", "autonomous_agent.yml", "--repo", full_repo])
+    wf_res = _run_gh_retry(["workflow", "run", "autonomous_agent.yml", "--repo", full_repo])
 
     return {
         "repo": full_repo,
         "repo_url": f"https://github.com/{full_repo}",
         "site_url": expected_base,
         "repo_created": repo_created,
+        "files_checked": len(deploy_files),
         "files_uploaded": len(uploaded_files),
         "pages_configured": pages_res.returncode == 0,
         "workflow_triggered": wf_res.returncode == 0,
