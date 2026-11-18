@@ -1,128 +1,48 @@
 {
-  "fetched_at": "2026-11-18T20:11:30.672209+00:00",
-  "ingestion_mode": "live-web",
-  "signal_count": 18,
+  "fetched_at": "2026-11-18T19:59:01.676743+00:00",
+  "ingestion_mode": "offline-seed",
+  "signal_count": 5,
   "errors": [],
   "signals": [
     {
-      "source": "Hacker News",
-      "title": "Unauthenticated remote code execution in Nginx",
-      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "score": 689,
+      "source": "Curated Intelligence",
+      "title": "Zero-Cost AI Workflows with GitHub Actions & Free LLM Tiers",
+      "url": "https://github.com/features/actions",
+      "score": 342,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (277 comments) relevant to developer builders."
+      "summary": "Builders are replacing paid VPS cron servers with public-repo GitHub Actions workflows paired with Gemini and Groq free APIs."
     },
     {
-      "source": "Hacker News",
-      "title": "Seven new models at scalable price-performance",
-      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-      "score": 302,
+      "source": "Curated Intelligence",
+      "title": "Programmatic SEO Directories Built on Serverless SQLite & Cloudflare Pages",
+      "url": "https://pages.cloudflare.com/",
+      "score": 289,
+      "topic": "Cloud Hosting & Edge",
+      "summary": "Unlimited free static bandwidth on Cloudflare Pages enables zero-cost comparison hubs targeting high-intent SaaS buyer keywords."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "Merchant of Record Platforms (Lemon Squeezy vs Gumroad) for Indie Digital Products",
+      "url": "https://www.lemonsqueezy.com/",
+      "score": 256,
+      "topic": "Payments & MoR",
+      "summary": "Zero-monthly-fee Merchant of Record tools remove upfront incorporation and VAT hurdles for solo digital entrepreneurs."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "Serverless Postgres & Edge SQLite Free Tier Benchmarks (Supabase vs Neon vs Turso)",
+      "url": "https://turso.tech/",
+      "score": 218,
+      "topic": "Serverless Databases",
+      "summary": "Free-tier limits across modern databases now support millions of reads per month before requiring a $19-$29 upgrade."
+    },
+    {
+      "source": "Curated Intelligence",
+      "title": "High-Speed Inference Routing Across Free-Tier LLM APIs",
+      "url": "https://openrouter.ai/",
+      "score": 195,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (192 comments) relevant to developer builders."
-    },
-    {
-      "source": "GitHub",
-      "title": "kazim768/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/kazim768/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "kazim768/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/kazim768/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "SandyPandyMandy/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/SandyPandyMandy/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "lloweryfn-rgb/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/lloweryfn-rgb/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "ITprogamatikDedSec/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/ITprogamatikDedSec/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "python001-dev/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/python001-dev/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "WLfear/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/WLfear/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "ITprogamatikDedSec/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/ITprogamatikDedSec/manus--ai",
-      "score": 201,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "Hacker News",
-      "title": "AI agents ask better questions than KPMG accountants in audit trial",
-      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
-      "score": 165,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (85 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Scottish HTTP Codes",
-      "url": "https://underwood.network/http/scots.html",
-      "score": 147,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (27 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
-      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-      "score": 111,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (69 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
-      "url": "https://exitpath-ruddy.vercel.app/",
-      "score": 89,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (14 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Genie 4 is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "score": 79,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (59 comments) relevant to developer builders."
+      "summary": "Multi-provider fallback chains prevent rate-limit downtime when operating autonomous content pipelines at $0 API cost."
     }
   ]
 }
