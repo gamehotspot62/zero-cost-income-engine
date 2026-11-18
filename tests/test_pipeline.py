@@ -86,6 +86,14 @@ class TestZeroCostIncomeEngine(unittest.TestCase):
         self.assertIn(compare_files[0].name, sitemap_text)
         self.assertIn(alt_files[0].name, sitemap_text)
 
+        # Verify Google Search Console verification file is preserved in dist/
+        gsc_file = dist / "google99ee1ec53fe652a5.html"
+        self.assertTrue(gsc_file.exists(), "Missing Google Search Console verification file")
+        self.assertEqual(
+            gsc_file.read_text(encoding="utf-8").strip(),
+            "google-site-verification: google99ee1ec53fe652a5.html",
+        )
+
     def test_setup_assistant_status_and_updates(self) -> None:
         # Ensure isolated test fixture starts with placeholder URLs regardless of user's live config
         settings_path = self.temp_dir / "config" / "settings.json"
