@@ -260,7 +260,7 @@
       "tagline": "All-in-one Merchant of Record handling global VAT/sales tax, SaaS subscriptions, and affiliates.",
       "free_tier_limits": "$0/month fixed cost; 5% + $0.50 only when a sale happens",
       "paid_start_price": "Transaction-only pricing (no monthly subscription)",
-      "affiliate_url": "https://www.lemonsqueezy.com/?aff=stackpulse_replace_me",
+      "affiliate_url": "https://www.lemonsqueezy.com/?utm_source=stackpulse",
       "commission_notes": "Free to join MoR + built-in affiliate marketplace commissions (10%-50%)",
       "pros": [
         "Zero monthly fee and automatic global tax/VAT compliance",
