@@ -260,8 +260,10 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
             raise RuntimeError(f"Failed uploading {rel}: {put.stderr.decode('utf-8', 'replace')}")
         uploaded_files.append(rel)
 
-    # Enable GitHub Pages (GitHub Actions source)
-    pages_payload = json.dumps({"build_type": "workflow"}).encode("utf-8")
+    # Enable GitHub Pages (GitHub Actions workflow mode with explicit source fallback)
+    pages_payload = json.dumps(
+        {"build_type": "workflow", "source": {"branch": "main", "path": "/"}}
+    ).encode("utf-8")
     pages_res = _run_gh(
         ["api", "--method", "POST", f"repos/{full_repo}/pages", "--input", "-"],
         input_bytes=pages_payload,
@@ -271,6 +273,18 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
             ["api", "--method", "PUT", f"repos/{full_repo}/pages", "--input", "-"],
             input_bytes=pages_payload,
         )
+    if pages_res.returncode != 0:
+        gh_pages_payload = json.dumps(
+            {"build_type": "workflow", "source": {"branch": "gh-pages", "path": "/"}}
+        ).encode("utf-8")
+        pages_res = _run_gh_retry(
+            ["api", "--method", "POST", f"repos/{full_repo}/pages", "--input", "-"],
+            input_bytes=gh_pages_payload,
+        )
+
+    pages_check = _run_gh(["api", f"repos/{full_repo}/pages"])
+    has_pages_check = _run_gh(["api", f"repos/{full_repo}", "--jq", ".has_pages"])
+    has_pages = has_pages_check.stdout.decode("utf-8", "replace").strip() == "true"
 
     # Trigger initial workflow run
     wf_res = _run_gh_retry(["workflow", "run", "autonomous_agent.yml", "--repo", full_repo])
@@ -282,7 +296,8 @@ def deploy_to_github(project_root: Path, repo_name: str = "zero-cost-income-engi
         "repo_created": repo_created,
         "files_checked": len(deploy_files),
         "files_uploaded": len(uploaded_files),
-        "pages_configured": pages_res.returncode == 0,
+        "pages_configured": pages_res.returncode == 0 or pages_check.returncode == 0,
+        "has_pages": has_pages,
         "workflow_triggered": wf_res.returncode == 0,
     }
 
