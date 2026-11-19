@@ -67,12 +67,28 @@ class TestZeroCostIncomeEngine(unittest.TestCase):
             dist / "products" / "catalog.json",
             dist / "promotions" / "index.html",
             dist / "promotions" / "latest-campaigns.json",
+            dist / "assets" / "logo.svg",
+            dist / "assets" / "favicon.svg",
+            dist / "assets" / "favicon.png",
+            dist / "favicon.ico",
         ]
         for file_path in required_files:
             self.assertTrue(file_path.exists(), f"Missing generated file: {file_path}")
             self.assertGreater(file_path.stat().st_size, 20, f"Generated file too small: {file_path}")
 
+        self.assertTrue((dist / "assets" / "favicon.png").read_bytes().startswith(b"\x89PNG"))
         compare_files = list((dist / "compare").glob("*.html"))
+        for html_page in [
+            dist / "index.html",
+            dist / "products" / "index.html",
+            dist / "promotions" / "index.html",
+            dist / "newsletter" / "latest-issue.html",
+            compare_files[0],
+        ]:
+            content = html_page.read_text(encoding="utf-8")
+            self.assertIn('rel="icon"', content)
+            self.assertIn("assets/favicon.svg", content)
+
         alt_files = list((dist / "alternatives").glob("*.html"))
         go_files = list((dist / "go").glob("*.html"))
 
