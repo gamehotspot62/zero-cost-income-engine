@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.brand_assets import BRAND_LOGO_SVG, head_favicon_links
+
 
 def build_affiliate_redirects(tools: list[dict[str, Any]], dist_dir: Path) -> list[dict[str, Any]]:
     """Create clean /go/<tool-id>.html redirect pages so affiliate IDs are centrally managed."""
@@ -29,6 +31,7 @@ def build_affiliate_redirects(tools: list[dict[str, Any]], dist_dir: Path) -> li
   <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="refresh" content="0; url={escaped_target}" />
   <title>Redirecting to {escaped_name}...</title>
+  {head_favicon_links("../")}
   <style>
     body {{ font-family: system-ui, -apple-system, sans-serif; background: #0b0f19; color: #e5e7eb; display: grid; place-items: center; min-height: 100vh; margin: 0; }}
     .card {{ background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 28px; max-width: 460px; text-align: center; }}
@@ -259,6 +262,7 @@ def build_digital_product_bundle(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Products &amp; Blueprints | {html.escape(site_name)}</title>
   <meta name="description" content="Download free $0 cheat sheets, AI automation blueprints, and sponsor slots from {html.escape(site_name, quote=True)}." />
+  {head_favicon_links("../")}
   <style>
     :root {{ --bg:#070b14; --surface:#0f172a; --surface-2:#1e293b; --border:#334155; --text:#f1f5f9; --muted:#94a3b8; --accent:#38bdf8; --accent-2:#22c55e; }}
     * {{ box-sizing: border-box; }}
@@ -267,6 +271,7 @@ def build_digital_product_bundle(
     .container {{ max-width:1100px; margin:0 auto; padding:0 20px; }}
     header {{ border-bottom:1px solid var(--border); background:rgba(15,23,42,0.92); padding:14px 0; }}
     .nav {{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; }}
+    .brand {{ display:inline-flex; align-items:center; gap:10px; font-weight:800; color:#fff; }}
     .nav-links {{ display:flex; gap:18px; flex-wrap:wrap; font-size:0.92rem; }}
     .nav-links a {{ color:var(--muted); font-weight:500; }}
     .hero {{ padding:42px 0 28px; border-bottom:1px solid var(--border); }}
@@ -283,7 +288,7 @@ def build_digital_product_bundle(
 <body>
   <header>
     <div class="container nav">
-      <a href="../index.html" style="font-weight:800; color:#fff;">{html.escape(site_name)} <span style="color:var(--accent);">$0 Stack</span></a>
+      <a class="brand" href="../index.html">{BRAND_LOGO_SVG}<span>{html.escape(site_name)} <span style="color:var(--accent);">$0 Stack</span></span></a>
       <nav class="nav-links">
         <a href="../index.html">Directory</a>
         <a href="index.html" style="color:#fff;">Products ({len(products_catalog)})</a>
@@ -348,9 +353,11 @@ def build_newsletter_issue(
 <head>
   <meta charset="utf-8" />
   <title>{html.escape(editorial['headline'])}</title>
+  {head_favicon_links("../")}
   <style>
     body {{ font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 24px; }}
     .wrap {{ max-width: 640px; margin: 0 auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; }}
+    .brand-row {{ display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }}
     .badge {{ display: inline-block; background: #0ea5e9; color: #ffffff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }}
     .cta {{ display: inline-block; background: #0f172a; color: #ffffff; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 12px; }}
     .sponsor {{ background: #f1f5f9; border-left: 4px solid #0ea5e9; padding: 14px 16px; border-radius: 6px; margin: 20px 0; }}
@@ -358,7 +365,10 @@ def build_newsletter_issue(
 </head>
 <body>
   <div class="wrap">
-    <span class="badge">{html.escape(settings['site_name'])} Digest &bull; {date_str}</span>
+    <div class="brand-row">
+      {BRAND_LOGO_SVG}
+      <span class="badge">{html.escape(settings['site_name'])} Digest &bull; {date_str}</span>
+    </div>
     <h1>{html.escape(editorial['headline'])}</h1>
     <p>{html.escape(editorial['intro'])}</p>
 
