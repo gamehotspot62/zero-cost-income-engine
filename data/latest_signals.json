@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T20:23:52.794947+00:00",
+  "fetched_at": "2026-11-19T07:02:27.671490+00:00",
   "ingestion_mode": "live-web",
   "signal_count": 19,
   "errors": [],
@@ -8,70 +8,46 @@
       "source": "Hacker News",
       "title": "Unauthenticated remote code execution in Nginx",
       "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "score": 714,
+      "score": 1285,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (289 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (559 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Inside Deutsche Bank",
-      "url": "https://www.inside-db.com/",
-      "score": 367,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (137 comments) relevant to developer builders."
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "score": 703,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (596 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Seven new models at scalable price-performance",
-      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-      "score": 309,
+      "title": "Genie 4 is now available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "score": 231,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (196 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (156 comments) relevant to developer builders."
     },
     {
-      "source": "GitHub",
-      "title": "kazim768/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/kazim768/manus--ai",
-      "score": 202,
+      "source": "Hacker News",
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+      "score": 209,
       "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "lloweryfn-rgb/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/lloweryfn-rgb/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "kazim768/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/kazim768/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "stancaedy10-glitch/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/stancaedy10-glitch/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "SandyPandyMandy/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/SandyPandyMandy/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+      "summary": "Trending HN discussion (67 comments) relevant to developer builders."
     },
     {
       "source": "GitHub",
       "title": "python001-dev/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
       "url": "https://github.com/python001-dev/manus--ai",
+      "score": 202,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
+    },
+    {
+      "source": "GitHub",
+      "title": "stancaedy10-glitch/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/stancaedy10-glitch/manus--ai",
       "score": 202,
       "topic": "AI & LLM APIs",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
@@ -86,43 +62,67 @@
     },
     {
       "source": "GitHub",
-      "title": "ITprogamatikDedSec/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/ITprogamatikDedSec/manus--ai",
-      "score": 201,
+      "title": "ITprogamatikDedSec/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/ITprogamatikDedSec/ai--manus",
+      "score": 202,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "stancaedy10-glitch/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/stancaedy10-glitch/ai--manus",
+      "score": 202,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "SandyPandyMandy/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/SandyPandyMandy/ai--manus",
+      "score": 202,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "python001-dev/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/python001-dev/ai--manus",
+      "score": 202,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "WLfear/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/WLfear/manus--ai",
+      "score": 202,
       "topic": "AI & LLM APIs",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
     },
     {
       "source": "Hacker News",
-      "title": "AI agents ask better questions than KPMG accountants in audit trial",
-      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
-      "score": 171,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (89 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
-      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-      "score": 116,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (69 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
       "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
       "url": "https://exitpath-ruddy.vercel.app/",
-      "score": 93,
+      "score": 200,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (15 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (60 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Genie 4 is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "score": 91,
+      "title": "Advancing chip design with OpenAI models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "score": 197,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (69 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (125 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "score": 196,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (62 comments) relevant to developer builders."
     }
   ]
 }
