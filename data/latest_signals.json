@@ -1,128 +1,128 @@
 {
-  "fetched_at": "2026-11-19T19:45:09.056429+00:00",
+  "fetched_at": "2026-11-19T20:08:08.227677+00:00",
   "ingestion_mode": "live-web",
   "signal_count": 19,
   "errors": [],
   "signals": [
     {
       "source": "GitHub",
+      "title": "n8n-io/n8n — Fair-code workflow automation platform with native AI capabilities. Combine visual buildin",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 211422,
+      "topic": "AI & LLM APIs",
+      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "source": "GitHub",
       "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
       "url": "https://github.com/stablyai/orca",
-      "score": 129739,
+      "score": 129749,
       "topic": "AI & LLM APIs",
       "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
     },
     {
       "source": "GitHub",
-      "title": "heygen-com/hyperframes — AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Descri",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "score": 86968,
-      "topic": "AI & LLM APIs",
-      "summary": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame."
-    },
-    {
-      "source": "GitHub",
-      "title": "ruvnet/ruflo — 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomou",
-      "url": "https://github.com/ruvnet/ruflo",
-      "score": 82096,
-      "topic": "AI & LLM APIs",
-      "summary": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federa"
-    },
-    {
-      "source": "GitHub",
       "title": "pingdotgg/t3code — The best way to control Claude Code, Codex and more from any computer or phone",
       "url": "https://github.com/pingdotgg/t3code",
-      "score": 66241,
+      "score": 66257,
       "topic": "Automation & Workflows",
       "summary": "The best way to control Claude Code, Codex and more from any computer or phone"
     },
     {
       "source": "GitHub",
-      "title": "netbirdio/netbird — NetBird securely connects people, machines and AI agents across any network with one ident",
-      "url": "https://github.com/netbirdio/netbird",
-      "score": 31145,
+      "title": "manaflow-ai/cmux — Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "score": 28834,
       "topic": "AI & LLM APIs",
-      "summary": "NetBird securely connects people, machines and AI agents across any network with one identity-based Zero Trust platform. Powered by peer-to-peer WireGuard®"
+      "summary": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability."
     },
     {
       "source": "GitHub",
-      "title": "mjmirza/app-store-compliance — Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard ",
-      "url": "https://github.com/mjmirza/app-store-compliance",
-      "score": 1717,
+      "title": "mengxi-ream/read-frog — 🐸 Read Frog - Open-source AI language learning & flashcards, an Immersive Translate altern",
+      "url": "https://github.com/mengxi-ream/read-frog",
+      "score": 10486,
       "topic": "AI & LLM APIs",
-      "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadline"
+      "summary": "🐸 Read Frog - Open-source AI language learning & flashcards, an Immersive Translate alternative | 🐸 陪读蛙 - 开源 AI 语言学习与闪词卡，沉浸式翻译替代"
     },
     {
       "source": "GitHub",
-      "title": "rvion/CushyStudio — 🛋 The AI and Generative Art platform for everyone",
-      "url": "https://github.com/rvion/CushyStudio",
-      "score": 813,
+      "title": "nightly-labs/openbot — A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok w",
+      "url": "https://github.com/nightly-labs/openbot",
+      "score": 9201,
       "topic": "AI & LLM APIs",
-      "summary": "🛋 The AI and Generative Art platform for everyone"
+      "summary": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration."
     },
     {
       "source": "GitHub",
-      "title": "Override92/AiSList — Filter list for Ai Slop channels on YouTube",
-      "url": "https://github.com/Override92/AiSList",
-      "score": 429,
+      "title": "civitai/civitai — A repository of models, textual inversions, and more",
+      "url": "https://github.com/civitai/civitai",
+      "score": 7326,
       "topic": "AI & LLM APIs",
-      "summary": "Filter list for Ai Slop channels on YouTube"
+      "summary": "A repository of models, textual inversions, and more"
+    },
+    {
+      "source": "GitHub",
+      "title": "expo/exact — Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can",
+      "url": "https://github.com/expo/exact",
+      "score": 4723,
+      "topic": "AI & LLM APIs",
+      "summary": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them."
     },
     {
       "source": "Hacker News",
       "title": "Anthropic hits $2T in Nasdaq debut",
       "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-      "score": 417,
+      "score": 471,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (626 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (728 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
       "url": "https://verialabs.com/ruby2shell/",
-      "score": 337,
+      "score": 339,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (136 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (139 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Distributed, high-performance blob storage on SQLite",
       "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-      "score": 210,
+      "score": 214,
       "topic": "Serverless Databases",
-      "summary": "Trending HN discussion (58 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (60 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Nintendo takes Picofly firmware down from GitHub [video]",
       "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-      "score": 208,
+      "score": 212,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (72 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (76 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Claude solves two open problems in the physics of black holes",
       "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "score": 173,
+      "score": 202,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (46 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (67 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
       "url": "https://thedataexchange.media/pete-warden-moonshine/",
-      "score": 160,
+      "score": 164,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (150 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (152 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
       "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
-      "score": 127,
+      "score": 135,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (98 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (102 comments) relevant to developer builders."
     }
   ]
 }
