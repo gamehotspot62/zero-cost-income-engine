@@ -1,128 +1,128 @@
 {
-  "fetched_at": "2026-11-19T07:02:27.671490+00:00",
+  "fetched_at": "2026-11-19T17:03:55.314070+00:00",
   "ingestion_mode": "live-web",
-  "signal_count": 19,
+  "signal_count": 16,
   "errors": [],
   "signals": [
     {
-      "source": "Hacker News",
-      "title": "Unauthenticated remote code execution in Nginx",
-      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "score": 1285,
+      "source": "GitHub",
+      "title": "morluto/rea — Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "score": 469576,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (559 comments) relevant to developer builders."
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries."
+    },
+    {
+      "source": "GitHub",
+      "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
+      "url": "https://github.com/stablyai/orca",
+      "score": 129644,
+      "topic": "AI & LLM APIs",
+      "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
+    },
+    {
+      "source": "GitHub",
+      "title": "cheaper-inference/OmniRoute — Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ mo",
+      "url": "https://github.com/cheaper-inference/OmniRoute",
+      "score": 88861,
+      "topic": "AI & LLM APIs",
+      "summary": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline"
+    },
+    {
+      "source": "GitHub",
+      "title": "netdata/netdata — Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · A",
+      "url": "https://github.com/netdata/netdata",
+      "score": 81493,
+      "topic": "AI & LLM APIs",
+      "summary": "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfi"
+    },
+    {
+      "source": "GitHub",
+      "title": "SimplifyJobs/Summer2027-Internships — Summer 2027 software engineering, data science, AI, quant, product management, and hardwar",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships",
+      "score": 48451,
+      "topic": "AI & LLM APIs",
+      "summary": "Summer 2027 software engineering, data science, AI, quant, product management, and hardware internship postings. Updated daily by Simplify and Pitt CSC."
+    },
+    {
+      "source": "GitHub",
+      "title": "repowise-dev/repowise — Codebase intelligence for AI and humans: code health scores, auto-generated docs, git anal",
+      "url": "https://github.com/repowise-dev/repowise",
+      "score": 8177,
+      "topic": "AI & LLM APIs",
+      "summary": "Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP."
+    },
+    {
+      "source": "GitHub",
+      "title": "dyoshikawa/rulesync — A Utility CLI for AI Coding Agents",
+      "url": "https://github.com/dyoshikawa/rulesync",
+      "score": 1630,
+      "topic": "AI & LLM APIs",
+      "summary": "A Utility CLI for AI Coding Agents"
     },
     {
       "source": "Hacker News",
-      "title": "Gemini 4 Neon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "score": 703,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (596 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Genie 4 is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "score": 231,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (156 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
-      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
-      "score": 209,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (67 comments) relevant to developer builders."
-    },
-    {
-      "source": "GitHub",
-      "title": "python001-dev/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/python001-dev/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "stancaedy10-glitch/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/stancaedy10-glitch/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "GitHub",
-      "title": "WLfear/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/WLfear/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "ITprogamatikDedSec/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/ITprogamatikDedSec/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "stancaedy10-glitch/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/stancaedy10-glitch/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "SandyPandyMandy/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/SandyPandyMandy/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "python001-dev/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/python001-dev/ai--manus",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
-    },
-    {
-      "source": "GitHub",
-      "title": "WLfear/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
-      "url": "https://github.com/WLfear/manus--ai",
-      "score": 202,
-      "topic": "AI & LLM APIs",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
-    },
-    {
-      "source": "Hacker News",
-      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
-      "url": "https://exitpath-ruddy.vercel.app/",
-      "score": 200,
+      "title": "How the European Commission rolled out Matrix to more than 40k staff",
+      "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+      "score": 499,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (60 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (262 comments) relevant to developer builders."
     },
     {
-      "source": "Hacker News",
-      "title": "Advancing chip design with OpenAI models",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-      "score": 197,
+      "source": "GitHub",
+      "title": "Override92/AiSList — Filter list for Ai Slop channels on YouTube",
+      "url": "https://github.com/Override92/AiSList",
+      "score": 429,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (125 comments) relevant to developer builders."
+      "summary": "Filter list for Ai Slop channels on YouTube"
     },
     {
       "source": "Hacker News",
-      "title": "Multiple vulnerabilities in Regexp and String case conversion",
-      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
-      "score": 196,
+      "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+      "url": "https://verialabs.com/ruby2shell/",
+      "score": 299,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (123 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Distributed, high-performance blob storage on SQLite",
+      "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+      "score": 179,
+      "topic": "Serverless Databases",
+      "summary": "Trending HN discussion (49 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Nintendo takes Picofly firmware down from GitHub [video]",
+      "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
+      "score": 157,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (62 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (55 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Everything you need to survive and rebuild society",
+      "url": "https://lastbook.org/",
+      "score": 134,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (71 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)",
+      "url": "https://thedataexchange.media/pete-warden-moonshine/",
+      "score": 72,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (52 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "OpenAI still has a WebRTC Problem",
+      "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
+      "score": 60,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (17 comments) relevant to developer builders."
     }
   ]
 }
