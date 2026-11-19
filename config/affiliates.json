@@ -254,6 +254,29 @@
       "estimated_epc_usd": 1.4
     },
     {
+      "id": "railway-cloud",
+      "name": "Railway",
+      "category": "Cloud Hosting & Edge",
+      "tagline": "Instant infrastructure platform for deploying Python agents, databases, and cron workers.",
+      "free_tier_limits": "Free Trial credit ($5) + $1-$5/mo Hobby usage tier with scale-to-zero",
+      "paid_start_price": "$5/mo Hobby plan (includes $5 usage credit)",
+      "affiliate_url": "https://railway.app/?utm_source=stackpulse",
+      "commission_notes": "Developer cloud referral credits & high-retention SaaS infra funnel",
+      "pros": [
+        "Zero-config Dockerfile & Nixpacks deploys in seconds",
+        "Native cron jobs, Postgres, and Redis add-ons",
+        "Usage-based billing prevents paying for idle CPU"
+      ],
+      "cons": [
+        "No permanent unlimited free tier after initial trial credit",
+        "Egress pricing adds up for media-heavy apps"
+      ],
+      "best_for": "Always-on Python automation bots, APIs, and webhook receivers",
+      "open_source_alt": "Coolify / Dokploy",
+      "score": 9.1,
+      "estimated_epc_usd": 1.35
+    },
+    {
       "id": "lemon-squeezy",
       "name": "Lemon Squeezy",
       "category": "Payments & MoR",
@@ -323,6 +346,29 @@
       "estimated_epc_usd": 1.2
     },
     {
+      "id": "polar-sh",
+      "name": "Polar.sh",
+      "category": "Payments & MoR",
+      "tagline": "Open-source Merchant of Record built for developers selling SaaS, licenses, and digital kits.",
+      "free_tier_limits": "$0/month fixed cost; 4% + $0.40 only when a sale happens",
+      "paid_start_price": "Transaction-only pricing (no monthly fee)",
+      "affiliate_url": "https://polar.sh/?utm_source=stackpulse",
+      "commission_notes": "Modern Lemon Squeezy alternative with lower fees and GitHub repo access gating",
+      "pros": [
+        "Lower transaction fee (4% + $0.40) than Lemon Squeezy and Gumroad",
+        "Automatic GitHub private repository & Discord role fulfillment",
+        "Open-source Merchant of Record handling global VAT"
+      ],
+      "cons": [
+        "Newer discovery marketplace than Gumroad",
+        "Focused primarily on software & developer products"
+      ],
+      "best_for": "Indie developers selling code starter kits, SaaS seats, and GitHub access",
+      "open_source_alt": "Polar Self-Hosted / Stripe",
+      "score": 9.5,
+      "estimated_epc_usd": 1.75
+    },
+    {
       "id": "github-actions",
       "name": "GitHub Actions",
       "category": "Automation & Workflows",
@@ -390,6 +436,213 @@
       "open_source_alt": "n8n Self-Hosted / Activepieces",
       "score": 9.4,
       "estimated_epc_usd": 2.8
+    },
+    {
+      "id": "activepieces",
+      "name": "Activepieces",
+      "category": "Automation & Workflows",
+      "tagline": "MIT-licensed open-source Zapier & Make alternative with native AI workflow pieces.",
+      "free_tier_limits": "1,000 free tasks/mo on Cloud + unlimited self-hosted MIT Community Edition",
+      "paid_start_price": "$5-$10/mo Cloud (or $0 self-hosted)",
+      "affiliate_url": "https://www.activepieces.com/?utm_source=stackpulse",
+      "commission_notes": "High-growth open-source automation tool for zero-budget teams",
+      "pros": [
+        "True MIT open-source license with zero execution caps when self-hosted",
+        "1,000 free tasks/month on managed cloud tier",
+        "Clean TypeScript piece builder and AI agent blocks"
+      ],
+      "cons": [
+        "Smaller third-party integration library than Make",
+        "Self-hosting requires Docker container host"
+      ],
+      "best_for": "Open-source no-code automations and custom AI webhook pipelines",
+      "open_source_alt": "n8n / Windmill",
+      "score": 9.1,
+      "estimated_epc_usd": 1.6
+    },
+    {
+      "id": "cursor-ai",
+      "name": "Cursor AI Editor",
+      "category": "AI Coding & Agent IDEs",
+      "tagline": "AI-first code editor with multi-file agent edits, codebase indexing, and Tab autocomplete.",
+      "free_tier_limits": "Free Hobby tier with limited Agent completions & Tab suggestions",
+      "paid_start_price": "$20/mo Pro plan",
+      "affiliate_url": "https://www.cursor.com/?utm_source=stackpulse",
+      "commission_notes": "High-demand developer IDE driving developer tool & AI template conversions",
+      "pros": [
+        "Deep repository-wide multi-file editing and terminal execution",
+        "Drop-in VS Code extension and keybinding compatibility",
+        "Supports BYOK API keys for custom models"
+      ],
+      "cons": [
+        "Hobby quota runs out quickly on heavy refactoring",
+        "Proprietary wrapper around VS Code"
+      ],
+      "best_for": "Full-stack solo builders shipping micro-SaaS MVPs rapidly",
+      "open_source_alt": "Continue.dev / Cline + VS Code",
+      "score": 9.5,
+      "estimated_epc_usd": 1.5
+    },
+    {
+      "id": "windsurf-ide",
+      "name": "Windsurf (Codeium)",
+      "category": "AI Coding & Agent IDEs",
+      "tagline": "Agentic AI IDE featuring Cascade deep context flows and generous free autocomplete.",
+      "free_tier_limits": "Free forever tier with unlimited basic autocomplete + free prompt credits",
+      "paid_start_price": "$15/mo Pro plan",
+      "affiliate_url": "https://windsurf.com/?utm_source=stackpulse",
+      "commission_notes": "Lower entry pricing ($15/mo) makes Cursor alternative comparisons convert well",
+      "pros": [
+        "Lower $15/mo Pro tier than Cursor ($20/mo)",
+        "Cascade agent keeps context across terminal and files",
+        "Free forever autocomplete tier for zero-budget coders"
+      ],
+      "cons": [
+        "Premium reasoning models consume monthly prompt credits",
+        "Newer plugin ecosystem edge cases"
+      ],
+      "best_for": "Budget-conscious solo developers wanting agentic multi-file coding",
+      "open_source_alt": "Cline / Aider + VS Code",
+      "score": 9.3,
+      "estimated_epc_usd": 1.4
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot Free",
+      "category": "AI Coding & Agent IDEs",
+      "tagline": "Native GitHub & VS Code AI coding assistant with a permanent free tier.",
+      "free_tier_limits": "2,000 code completions + 50 chat/agent requests per month free",
+      "paid_start_price": "$10/mo Pro plan (free for verified students/maintainers)",
+      "affiliate_url": "https://github.com/features/copilot?utm_source=stackpulse",
+      "commission_notes": "Core $0 entry point inside VS Code and GitHub ecosystem",
+      "pros": [
+        "Free monthly completions and chat natively in VS Code",
+        "Deep pull request, issue, and GitHub Actions integration",
+        "Free Pro access for open-source maintainers & students"
+      ],
+      "cons": [
+        "50 free chat/agent messages/month cap requires careful pacing",
+        "Less autonomous multi-file editing than dedicated agent IDEs"
+      ],
+      "best_for": "Developers already living in GitHub repositories on $0 budget",
+      "open_source_alt": "Tabby / Continue.dev",
+      "score": 9.0,
+      "estimated_epc_usd": 0.9
+    },
+    {
+      "id": "replit-agent",
+      "name": "Replit",
+      "category": "AI Coding & Agent IDEs",
+      "tagline": "Browser-based cloud IDE with AI app builder, instant Postgres, and one-click hosting.",
+      "free_tier_limits": "Free Starter tier with public workspaces and limited AI trial checkpoints",
+      "paid_start_price": "$20-$25/mo Core plan",
+      "affiliate_url": "https://replit.com/?utm_source=stackpulse",
+      "commission_notes": "High-converting non-technical founder & rapid prototype affiliate funnel",
+      "pros": [
+        "Zero local setup — runs completely in the browser",
+        "Prompt-to-deployed-app workflow with built-in database",
+        "Instant shareable live preview URLs"
+      ],
+      "cons": [
+        "Agent builds quickly require paid Core credits",
+        "Compute & deployment pricing higher than Cloudflare Pages + GitHub"
+      ],
+      "best_for": "Non-technical founders prototyping web apps from scratch",
+      "open_source_alt": "Bolt.diy / GitHub Codespaces",
+      "score": 8.9,
+      "estimated_epc_usd": 1.9
+    },
+    {
+      "id": "resend-email",
+      "name": "Resend",
+      "category": "Email, Growth & Analytics",
+      "tagline": "Developer-first transactional & broadcast email API with React Email templates.",
+      "free_tier_limits": "3,000 emails/month free (100 emails/day, 1 custom domain)",
+      "paid_start_price": "$20/mo Pro plan (50,000 emails)",
+      "affiliate_url": "https://resend.com/?utm_source=stackpulse",
+      "commission_notes": "Modern SendGrid alternative driving SaaS infrastructure conversions",
+      "pros": [
+        "Clean REST API & SDKs ready in under 5 minutes",
+        "3,000 free emails/month covers early SaaS growth",
+        "Built-in React Email and deliverability webhooks"
+      ],
+      "cons": [
+        "100 emails/day cap on free tier",
+        "Requires custom domain DNS records for production sending"
+      ],
+      "best_for": "Micro-SaaS signup notifications, receipts, and onboarding drips",
+      "open_source_alt": "Listmonk / Postal",
+      "score": 9.4,
+      "estimated_epc_usd": 1.1
+    },
+    {
+      "id": "buttondown-email",
+      "name": "Buttondown",
+      "category": "Email, Growth & Analytics",
+      "tagline": "Lightweight Markdown newsletter & automation API built for indie hackers and developers.",
+      "free_tier_limits": "Free up to 100 subscribers with web archive and RSS support",
+      "paid_start_price": "$9/mo Basic plan (up to 1,000 subscribers)",
+      "affiliate_url": "https://buttondown.com/?utm_source=stackpulse",
+      "commission_notes": "Ideal zero-cost API-first newsletter companion for automated digests",
+      "pros": [
+        "Clean REST API works directly from GitHub Actions",
+        "Markdown-first writing with zero bloat",
+        "Affordable $9/mo first paid step"
+      ],
+      "cons": [
+        "API automation & custom domains gated on paid tiers at scale",
+        "Simpler visual drag-and-drop editor than ConvertKit"
+      ],
+      "best_for": "Automated daily/weekly developer digest newsletters",
+      "open_source_alt": "Listmonk / Keila",
+      "score": 9.2,
+      "estimated_epc_usd": 1.25
+    },
+    {
+      "id": "posthog-analytics",
+      "name": "PostHog",
+      "category": "Email, Growth & Analytics",
+      "tagline": "All-in-one product analytics, session replays, feature flags, and A/B experiments.",
+      "free_tier_limits": "1M analytics events/mo + 5,000 session recordings + 1M feature flag requests free",
+      "paid_start_price": "Pay-as-you-go beyond 1M events/month",
+      "affiliate_url": "https://posthog.com/?utm_source=stackpulse",
+      "commission_notes": "Massive free tier makes it the #1 conversion recommendation for SaaS founders",
+      "pros": [
+        "1 million free events/month covers almost every growing site",
+        "Replaces Google Analytics, Hotjar, and LaunchDarkly in one script",
+        "Open-source core with EU/US cloud hosting"
+      ],
+      "cons": [
+        "Complex UI for simple blog pageview tracking",
+        "Can be blocked by strict privacy ad-blockers unless proxied"
+      ],
+      "best_for": "Tracking affiliate click funnels, conversion events, and SaaS UX",
+      "open_source_alt": "PostHog Self-Hosted / Umami",
+      "score": 9.6,
+      "estimated_epc_usd": 1.45
+    },
+    {
+      "id": "plausible-ce",
+      "name": "Plausible / Umami Analytics",
+      "category": "Email, Growth & Analytics",
+      "tagline": "Privacy-friendly, cookie-free lightweight web analytics under 1 KB script size.",
+      "free_tier_limits": "Umami Cloud free (100k events/mo) or $0 self-hosted Plausible CE / Umami",
+      "paid_start_price": "$9/mo Plausible Starter (or $0 self-hosted)",
+      "affiliate_url": "https://umami.is/?utm_source=stackpulse",
+      "commission_notes": "High-intent privacy Google Analytics alternative for pSEO publishers",
+      "pros": [
+        "No cookie consent banners required (GDPR/CCPA friendly)",
+        "Ultra-fast <1KB script protects Core Web Vitals SEO scores",
+        "100% open-source self-hostable option"
+      ],
+      "cons": [
+        "Plausible hosted cloud has no permanent free tier (Umami Cloud does)",
+        "No user-level session replay like PostHog"
+      ],
+      "best_for": "Fast static pSEO sites optimizing Google Core Web Vitals",
+      "open_source_alt": "Umami / Plausible Community Edition",
+      "score": 9.1,
+      "estimated_epc_usd": 1.05
     }
   ]
 }
