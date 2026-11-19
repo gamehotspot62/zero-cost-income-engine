@@ -236,10 +236,14 @@ def _generate_campaigns(
 ) -> dict[str, Any]:
     site_name = settings.get("site_name", "StackPulse AI")
     base_url = settings.get("base_url", "https://gamehotspot62.github.io/zero-cost-income-engine").rstrip("/")
-    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    now = datetime.now(timezone.utc)
+    date_str = now.strftime("%Y-%m-%d")
 
     top_signal = signals[0] if signals else {"title": "Zero-Cost Cloud & AI Stacks", "topic": "Automation & Workflows"}
-    featured_comp = comparisons[0] if comparisons else {"title": "Make vs n8n", "path": "index.html", "winner": "GitHub Actions"}
+    if comparisons:
+        featured_comp = comparisons[now.timetuple().tm_yday % len(comparisons)]
+    else:
+        featured_comp = {"title": "Make vs n8n", "path": "index.html", "winner": "GitHub Actions"}
     comp_url = f"{base_url}/{featured_comp['path']}"
     products_url = f"{base_url}/products/index.html"
     free_sheet_url = f"{base_url}/products/free-tier-cheatsheet.md"
@@ -271,19 +275,14 @@ def _generate_campaigns(
         f"Curious which free-tier limits caught you off guard recently?"
     )
     hn_title = f"Show HN: StackPulse AI – Automated $0 free-tier benchmark directory ({len(tools)} tools, open-source alternatives)"
-    devto_title = f"Zero-Cost 2026 Stack: {len(tools)} Free-Tier AI, Database & Automation Tools Compared ({date_str})"
+    devto_title = f"Zero-Cost 2026 Stack: {featured_comp['title']} & {len(tools)} Free-Tier Tools ({date_str})"
     devto_markdown = (
-        f"---\n"
-        f"title: \"{devto_title}\"\n"
-        f"published: true\n"
-        f"tags: opensource, ai, webdev, productivity\n"
-        f"canonical_url: {base_url}/index.html\n"
-        f"---\n\n"
         f"{editorial.get('intro', '')}\n\n"
         f"## Featured Comparison: {featured_comp['title']}\n"
         f"Top zero-cost pick: **{featured_comp['winner']}** — read the full TCO & FAQ breakdown here: {comp_url}\n\n"
         f"## Free Cheat Sheet & Automation Blueprints\n"
-        f"- Download the free Cheat Sheet: {free_sheet_url}\n"
+        f"- Browse all {len(tools)} verified free-tier tools: {base_url}/index.html\n"
+        f"- Download the free 2026 Cheat Sheet: {free_sheet_url}\n"
         f"- Explore all {product_meta.get('product_count', 4)} digital packs & sponsor slots: {products_url}\n"
         f"- Automate social & RSS distribution with Make (free Core promo): {make_promo_url}\n\n"
         f"## Actionable Play Today\n"
@@ -392,31 +391,51 @@ def _dispatch_webhooks(campaigns: dict[str, Any], offline: bool) -> dict[str, st
         results["devto_api"] = "not-configured"
     else:
         art = campaigns["channels"]["devto_article"]
-        payload = {
-            "article": {
-                "title": art["title"],
-                "published": os.environ.get("DEVTO_PUBLISH", "true").lower() == "true",
-                "body_markdown": art["text"],
-                "tags": ["opensource", "ai", "webdev", "productivity"],
-                "canonical_url": campaigns["site_url"],
-            }
+        headers = {
+            "Content-Type": "application/json",
+            "api-key": devto_key,
+            "User-Agent": "StackPulseAI-PromoAgent/1.0",
         }
         try:
-            req = urllib.request.Request(
-                "https://dev.to/api/articles",
-                data=json.dumps(payload).encode("utf-8"),
-                headers={
-                    "Content-Type": "application/json",
-                    "api-key": devto_key,
-                    "User-Agent": "StackPulseAI-PromoAgent/1.0",
-                },
-                method="POST",
+            existing_url = ""
+            list_req = urllib.request.Request(
+                "https://dev.to/api/articles/me/all?per_page=10",
+                headers=headers,
+                method="GET",
             )
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                results["devto_api"] = f"http-{resp.status}"
+            with urllib.request.urlopen(list_req, timeout=10) as list_resp:
+                existing_articles = json.loads(list_resp.read().decode("utf-8"))
+                if isinstance(existing_articles, list):
+                    for item in existing_articles:
+                        if item.get("title") == art["title"]:
+                            existing_url = str(item.get("url", ""))
+                            break
+
+            if existing_url:
+                results["devto_api"] = "http-200"
+                results["devto_url"] = existing_url
+            else:
+                payload = {
+                    "article": {
+                        "title": art["title"],
+                        "published": os.environ.get("DEVTO_PUBLISH", "true").lower() == "true",
+                        "body_markdown": art["text"],
+                        "tags": ["opensource", "ai", "webdev", "productivity"],
+                    }
+                }
+                req = urllib.request.Request(
+                    "https://dev.to/api/articles",
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers=headers,
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=12) as resp:
+                    created = json.loads(resp.read().decode("utf-8"))
+                    results["devto_api"] = f"http-{resp.status}"
+                    results["devto_url"] = str(created.get("url", ""))
         except urllib.error.HTTPError as exc:
             results["devto_api"] = f"http-{exc.code}"
-        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
             results["devto_api"] = f"error:{type(exc).__name__}"
 
     return results
