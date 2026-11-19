@@ -9,6 +9,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.brand_assets import (
+    BRAND_LOGO_SVG,
+    HERO_EMBLEM_SVG,
+    build_brand_assets,
+    head_favicon_links,
+)
 from src.llm_brain import ZeroCostLLMBrain
 
 BASE_CSS = """
@@ -50,8 +56,32 @@ header.nav {
   padding: 14px 0;
   gap: 12px;
 }
-.brand { font-weight: 800; font-size: 1.15rem; color: #fff; letter-spacing: -0.02em; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
 .brand span { color: var(--accent); }
+.brand:hover { text-decoration: none; }
+.sp-logo-mark {
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.brand:hover .sp-logo-mark {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.55));
+}
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .nav-links { display: flex; gap: 18px; font-size: 0.92rem; flex-wrap: wrap; }
 .nav-links a { color: var(--muted); font-weight: 500; }
 .nav-links a:hover { color: #fff; }
@@ -167,6 +197,7 @@ def _render_shell(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{html.escape(title)} | {html.escape(site_name)}</title>
   <meta name="description" content="{html.escape(description, quote=True)}" />
+  {head_favicon_links(root_prefix)}
   <link rel="alternate" type="application/rss+xml" title="{html.escape(site_name, quote=True)} RSS" href="{html.escape(base_url + '/feed.xml', quote=True)}" />
   <link rel="alternate" type="application/feed+json" title="{html.escape(site_name, quote=True)} JSON Feed" href="{html.escape(base_url + '/feed.json', quote=True)}" />
   {ld_block}
@@ -175,7 +206,7 @@ def _render_shell(
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="{root_prefix}index.html">{html.escape(site_name)} <span>$0 Stack</span></a>
+      <a class="brand" href="{root_prefix}index.html">{BRAND_LOGO_SVG}<span>{html.escape(site_name)} <span style="color:var(--accent);">$0 Stack</span></span></a>
       <nav class="nav-links">
         <a href="{root_prefix}index.html#tools">Tools</a>
         <a href="{root_prefix}index.html#comparisons">Comparisons</a>
@@ -446,8 +477,13 @@ def _build_index_page(
 
     body = f"""
 <section class="hero">
-  <span class="pill">100% Autonomous &bull; $0 Infrastructure</span>
-  <h1>Build &amp; Monetize Online with Verified $0 Free-Tier Stacks</h1>
+  <div class="hero-head">
+    <div>{HERO_EMBLEM_SVG}</div>
+    <div>
+      <span class="pill">100% Autonomous &bull; $0 Infrastructure</span>
+      <h1 style="margin-top:10px;">Build &amp; Monetize Online with Verified $0 Free-Tier Stacks</h1>
+    </div>
+  </div>
   <p class="lead">
     {html.escape(settings.get('site_name', 'StackPulse AI'))} autonomously tracks developer ecosystems daily,
     compiles {len(comparisons)} head-to-head comparisons and {len(alternatives)} open-source migration guides,
@@ -661,6 +697,7 @@ def build_full_site(
 ) -> dict[str, Any]:
     """Compile all programmatic SEO pages, index, dashboard, sitemap, and robots.txt."""
     dist_dir.mkdir(parents=True, exist_ok=True)
+    build_brand_assets(dist_dir)
     comparisons = _build_comparison_pages(tools, brain, settings, dist_dir)
     alternatives = _build_alternatives_pages(tools, brain, settings, dist_dir)
     _build_index_page(settings, tools, signal_payload["signals"], comparisons, alternatives, dist_dir)
