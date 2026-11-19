@@ -14,6 +14,7 @@ from src.monetization_engine import (
     build_digital_product_bundle,
     build_newsletter_issue,
 )
+from src.promotion_agent import run_promotion_agent
 from src.signal_ingestor import ingest_signals
 from src.site_builder import build_full_site
 
@@ -65,9 +66,25 @@ def run_pipeline(
         product_meta=product_meta,
         newsletter_meta=newsletter_meta,
         dist_dir=dist_dir,
+        return_details=True,
+    )
+    comparisons = site_stats.pop("_comparisons", [])
+    alternatives = site_stats.pop("_alternatives", [])
+
+    # 5. Run Autonomous Global Promotion & Traffic Agent
+    promo_stats = run_promotion_agent(
+        settings=settings,
+        tools=tools,
+        signals=signal_payload["signals"],
+        comparisons=comparisons,
+        alternatives=alternatives,
+        editorial=editorial,
+        product_meta=product_meta,
+        dist_dir=dist_dir,
+        offline=offline,
     )
 
-    # 5. Persist audit trail in data/run_history.json
+    # 6. Persist audit trail in data/run_history.json
     data_dir.mkdir(parents=True, exist_ok=True)
     history_path = data_dir / "run_history.json"
     history: list[dict[str, Any]] = []
@@ -88,7 +105,9 @@ def run_pipeline(
         "llm_usage": brain.providers_used,
         "site_stats": site_stats,
         "product_compiled": product_meta["markdown_file"],
+        "product_count": product_meta.get("product_count", 1),
         "newsletter_status": newsletter_meta["dispatch_status"],
+        "promotion_stats": promo_stats,
     }
     history.append(run_summary)
     history = history[-30:]  # keep latest 30 runs to prevent repo bloat
