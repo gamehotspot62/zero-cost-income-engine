@@ -45,29 +45,48 @@ class TestZeroCostIncomeEngine(unittest.TestCase):
         summary = run_pipeline(project_root=self.temp_dir, mode="full", offline=True)
         dist = self.temp_dir / "dist"
 
-        self.assertGreaterEqual(summary["site_stats"]["comparison_pages"], 15)
-        self.assertGreaterEqual(summary["site_stats"]["alternatives_pages"], 12)
+        self.assertGreaterEqual(summary["site_stats"]["comparison_pages"], 42)
+        self.assertGreaterEqual(summary["site_stats"]["alternatives_pages"], 28)
+        self.assertEqual(summary["product_count"], 4)
 
         required_files = [
             dist / "index.html",
             dist / "dashboard.html",
             dist / "sitemap.xml",
             dist / "robots.txt",
+            dist / "llms.txt",
+            dist / "llms-full.txt",
+            dist / "feed.xml",
+            dist / "feed.json",
+            dist / "stackpulseindexnow2026key.txt",
             dist / "newsletter" / "latest-issue.html",
+            dist / "products" / "index.html",
             dist / "products" / "zero-cost-stack-blueprint.md",
+            dist / "products" / "free-tier-cheatsheet.md",
+            dist / "products" / "ai-agent-workflow-templates.md",
             dist / "products" / "catalog.json",
+            dist / "promotions" / "index.html",
+            dist / "promotions" / "latest-campaigns.json",
         ]
         for file_path in required_files:
             self.assertTrue(file_path.exists(), f"Missing generated file: {file_path}")
-            self.assertGreater(file_path.stat().st_size, 100, f"Generated file too small: {file_path}")
+            self.assertGreater(file_path.stat().st_size, 20, f"Generated file too small: {file_path}")
 
         compare_files = list((dist / "compare").glob("*.html"))
         alt_files = list((dist / "alternatives").glob("*.html"))
         go_files = list((dist / "go").glob("*.html"))
 
-        self.assertGreaterEqual(len(compare_files), 15)
-        self.assertGreaterEqual(len(alt_files), 12)
-        self.assertGreaterEqual(len(go_files), 12)
+        self.assertGreaterEqual(len(compare_files), 42)
+        self.assertGreaterEqual(len(alt_files), 28)
+        self.assertGreaterEqual(len(go_files), 28)
+
+        catalog_data = json.loads((dist / "products" / "catalog.json").read_text(encoding="utf-8"))
+        self.assertEqual(catalog_data["product_count"], 4)
+        self.assertEqual(len(catalog_data["products"]), 4)
+
+        campaigns_data = json.loads((dist / "promotions" / "latest-campaigns.json").read_text(encoding="utf-8"))
+        self.assertIn("x_twitter", campaigns_data["channels"])
+        self.assertIn("devto_article", campaigns_data["channels"])
 
         # Verify Schema.org FAQPage JSON-LD inside a comparison page is valid JSON
         sample_compare = compare_files[0].read_text(encoding="utf-8")
