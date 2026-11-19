@@ -1,128 +1,128 @@
 {
-  "fetched_at": "2026-11-19T17:10:31.629787+00:00",
+  "fetched_at": "2026-11-19T18:03:18.235975+00:00",
   "ingestion_mode": "live-web",
-  "signal_count": 17,
+  "signal_count": 18,
   "errors": [],
   "signals": [
     {
       "source": "GitHub",
       "title": "morluto/rea — Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
-      "score": 469584,
+      "score": 469654,
       "topic": "Automation & Workflows",
       "summary": "Reverse engineer anything with agents, from app behavior down to native binaries."
     },
     {
       "source": "GitHub",
-      "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
-      "url": "https://github.com/stablyai/orca",
-      "score": 129651,
+      "title": "cheaper-inference/OmniRoute — Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ mo",
+      "url": "https://github.com/cheaper-inference/OmniRoute",
+      "score": 88878,
       "topic": "AI & LLM APIs",
-      "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
+      "summary": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline"
     },
     {
       "source": "GitHub",
-      "title": "pingdotgg/t3code — The best way to control Claude Code, Codex and more from any computer or phone",
-      "url": "https://github.com/pingdotgg/t3code",
-      "score": 66150,
-      "topic": "Automation & Workflows",
-      "summary": "The best way to control Claude Code, Codex and more from any computer or phone"
-    },
-    {
-      "source": "GitHub",
-      "title": "open-pencil/open-pencil — AI-native design editor. Open-source Figma alternative.",
-      "url": "https://github.com/open-pencil/open-pencil",
-      "score": 9960,
+      "title": "SimplifyJobs/Summer2027-Internships — Summer 2027 software engineering, data science, AI, quant, product management, and hardwar",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships",
+      "score": 48454,
       "topic": "AI & LLM APIs",
-      "summary": "AI-native design editor. Open-source Figma alternative."
+      "summary": "Summer 2027 software engineering, data science, AI, quant, product management, and hardware internship postings. Updated daily by Simplify and Pitt CSC."
     },
     {
       "source": "GitHub",
-      "title": "macro-inc/macro — Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM —",
-      "url": "https://github.com/macro-inc/macro",
-      "score": 6398,
+      "title": "manaflow-ai/cmux — Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "score": 28833,
       "topic": "AI & LLM APIs",
-      "summary": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory."
+      "summary": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability."
     },
     {
       "source": "GitHub",
-      "title": "vitali87/code-graph-rag — The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases w",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "score": 5394,
+      "title": "kortix-ai/CompanyOS — Kortix CompanyOS – the open-source operating system for your company. Multiplayer AI agent",
+      "url": "https://github.com/kortix-ai/CompanyOS",
+      "score": 20772,
       "topic": "AI & LLM APIs",
-      "summary": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs"
+      "summary": "Kortix CompanyOS – the open-source operating system for your company. Multiplayer AI agents, your company as code, sovereign on your infrastructure or ours."
     },
     {
       "source": "GitHub",
-      "title": "zeronsh/zeron — A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
-      "url": "https://github.com/zeronsh/zeron",
-      "score": 3716,
-      "topic": "Automation & Workflows",
-      "summary": "A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents."
-    },
-    {
-      "source": "Hacker News",
-      "title": "How the European Commission rolled out Matrix to more than 40k staff",
-      "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-      "score": 508,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (263 comments) relevant to developer builders."
-    },
-    {
-      "source": "GitHub",
-      "title": "Override92/AiSList — Filter list for Ai Slop channels on YouTube",
-      "url": "https://github.com/Override92/AiSList",
-      "score": 429,
+      "title": "nightly-labs/openbot — A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok w",
+      "url": "https://github.com/nightly-labs/openbot",
+      "score": 9179,
       "topic": "AI & LLM APIs",
-      "summary": "Filter list for Ai Slop channels on YouTube"
+      "summary": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration."
+    },
+    {
+      "source": "GitHub",
+      "title": "civitai/civitai — A repository of models, textual inversions, and more",
+      "url": "https://github.com/civitai/civitai",
+      "score": 7326,
+      "topic": "AI & LLM APIs",
+      "summary": "A repository of models, textual inversions, and more"
+    },
+    {
+      "source": "GitHub",
+      "title": "emperorclaw/emperorclaw — Introduce AI to your company workspace.",
+      "url": "https://github.com/emperorclaw/emperorclaw",
+      "score": 774,
+      "topic": "AI & LLM APIs",
+      "summary": "Introduce AI to your company workspace."
     },
     {
       "source": "Hacker News",
       "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
       "url": "https://verialabs.com/ruby2shell/",
-      "score": 300,
+      "score": 313,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (124 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (129 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Distributed, high-performance blob storage on SQLite",
       "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-      "score": 182,
+      "score": 195,
       "topic": "Serverless Databases",
-      "summary": "Trending HN discussion (49 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (55 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "Nintendo takes Picofly firmware down from GitHub [video]",
       "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-      "score": 162,
+      "score": 179,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (57 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (61 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Everything you need to survive and rebuild society",
-      "url": "https://lastbook.org/",
-      "score": 149,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (73 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)",
+      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
       "url": "https://thedataexchange.media/pete-warden-moonshine/",
-      "score": 79,
+      "score": 126,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (55 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (106 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
+      "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
+      "score": 105,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (81 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic hits $2T in Nasdaq debut",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "score": 94,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (38 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
       "title": "OpenAI still has a WebRTC Problem",
       "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
-      "score": 63,
+      "score": 71,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (18 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (20 comments) relevant to developer builders."
     }
   ]
 }
