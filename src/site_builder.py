@@ -156,6 +156,7 @@ def _render_shell(
     json_ld: dict[str, Any] | None = None,
 ) -> str:
     site_name = settings.get("site_name", "StackPulse AI")
+    base_url = settings.get("base_url", "https://gamehotspot62.github.io/zero-cost-income-engine").rstrip("/")
     ld_block = ""
     if json_ld:
         ld_block = f'<script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False)}</script>'
@@ -166,6 +167,8 @@ def _render_shell(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{html.escape(title)} | {html.escape(site_name)}</title>
   <meta name="description" content="{html.escape(description, quote=True)}" />
+  <link rel="alternate" type="application/rss+xml" title="{html.escape(site_name, quote=True)} RSS" href="{html.escape(base_url + '/feed.xml', quote=True)}" />
+  <link rel="alternate" type="application/feed+json" title="{html.escape(site_name, quote=True)} JSON Feed" href="{html.escape(base_url + '/feed.json', quote=True)}" />
   {ld_block}
   <style>{BASE_CSS}</style>
 </head>
@@ -174,11 +177,12 @@ def _render_shell(
     <div class="container nav-inner">
       <a class="brand" href="{root_prefix}index.html">{html.escape(site_name)} <span>$0 Stack</span></a>
       <nav class="nav-links">
-        <a href="{root_prefix}index.html#tools">Tool Directory</a>
+        <a href="{root_prefix}index.html#tools">Tools</a>
         <a href="{root_prefix}index.html#comparisons">Comparisons</a>
-        <a href="{root_prefix}index.html#signals">Live Signals</a>
+        <a href="{root_prefix}products/index.html">Products</a>
+        <a href="{root_prefix}promotions/index.html">Promotion Hub</a>
         <a href="{root_prefix}newsletter/latest-issue.html">Newsletter</a>
-        <a href="{root_prefix}dashboard.html">Agent Dashboard</a>
+        <a href="{root_prefix}dashboard.html">Dashboard</a>
       </nav>
     </div>
   </header>
@@ -187,7 +191,7 @@ def _render_shell(
   </main>
   <footer>
     <div class="container">
-      <p><strong>{html.escape(site_name)}</strong> &mdash; Automated zero-cost research &amp; comparison engine running on GitHub Actions. Some outbound links may earn a referral commission at zero cost to you.</p>
+      <p><strong>{html.escape(site_name)}</strong> &mdash; Automated zero-cost research, promotion &amp; comparison engine running on GitHub Actions. <a href="{root_prefix}feed.xml">RSS Feed</a> &bull; <a href="{root_prefix}llms.txt">llms.txt</a>. Some outbound links may earn a referral commission at zero cost to you.</p>
     </div>
   </footer>
 </body>
@@ -450,9 +454,10 @@ def _build_index_page(
     and updates automatically via GitHub Actions.
   </p>
   <div style="display:flex; gap:12px; flex-wrap:wrap;">
-    <a class="btn btn-green" href="{html.escape(mon.get('digital_product_checkout_url', '#'), quote=True)}">Get Blueprint Pack (${mon.get('digital_product_price_usd', 19)})</a>
-    <a class="btn btn-secondary" href="newsletter/latest-issue.html">Read Latest AI Digest</a>
-    <a class="btn btn-secondary" href="dashboard.html">Owner Telemetry Dashboard</a>
+    <a class="btn btn-green" href="products/index.html">Explore 4 Digital Products &amp; Free Cheat Sheet</a>
+    <a class="btn" href="{html.escape(mon.get('digital_product_checkout_url', '#'), quote=True)}">Get Blueprint Pack (${mon.get('digital_product_price_usd', 19)})</a>
+    <a class="btn btn-secondary" href="promotions/index.html">Global Promotion Hub</a>
+    <a class="btn btn-secondary" href="newsletter/latest-issue.html">AI Digest</a>
   </div>
 </section>
 
@@ -562,16 +567,19 @@ def _build_dashboard_page(
 
 <section class="grid-2" style="margin-top:24px;">
   <div class="card">
-    <h3>Digital Product Asset</h3>
-    <p><strong>{html.escape(product_meta['title'])}</strong> (${product_meta['price_usd']})</p>
-    <p class="meta">Compiled file: <code>{html.escape(product_meta['markdown_file'])}</code> ({product_meta['tools_included']} tools)</p>
-    <a class="btn btn-secondary" href="products/zero-cost-stack-blueprint.md">View Compiled Markdown</a>
+    <h3>Digital Product Storefront ({product_meta.get('product_count', 1)} Offers)</h3>
+    <p><strong>{html.escape(product_meta['title'])}</strong> (${product_meta['price_usd']}) + Free Cheat Sheet</p>
+    <p class="meta">Compiled storefront: <code>products/index.html</code> ({product_meta['tools_included']} tools)</p>
+    <a class="btn btn-secondary" href="products/index.html">Open Digital Storefront</a>
   </div>
   <div class="card">
-    <h3>Newsletter Digest Asset</h3>
+    <h3>Newsletter &amp; Global Promotion Agent</h3>
     <p><strong>{html.escape(newsletter_meta['headline'])}</strong></p>
     <p class="meta">Dispatch status: <code>{html.escape(newsletter_meta['dispatch_status'])}</code></p>
-    <a class="btn btn-secondary" href="newsletter/latest-issue.html">Preview HTML Newsletter</a>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <a class="btn btn-secondary" href="newsletter/latest-issue.html">Preview Newsletter</a>
+      <a class="btn btn-secondary" href="promotions/index.html">Global Promotion Hub</a>
+    </div>
   </div>
 </section>
 
@@ -600,7 +608,13 @@ def _build_sitemap_and_robots(
     dist_dir: Path,
 ) -> None:
     base_url = settings.get("base_url", "https://example.com").rstrip("/")
-    rel_paths = ["index.html", "newsletter/latest-issue.html"]
+    rel_paths = [
+        "index.html",
+        "products/index.html",
+        "promotions/index.html",
+        "newsletter/latest-issue.html",
+        "llms.txt",
+    ]
     rel_paths.extend(c["path"] for c in comparisons)
     rel_paths.extend(a["path"] for a in alternatives)
     full_urls = [f"{base_url}/"] + [f"{base_url}/{path}" for path in rel_paths]
@@ -643,6 +657,7 @@ def build_full_site(
     product_meta: dict[str, Any],
     newsletter_meta: dict[str, Any],
     dist_dir: Path,
+    return_details: bool = False,
 ) -> dict[str, Any]:
     """Compile all programmatic SEO pages, index, dashboard, sitemap, and robots.txt."""
     dist_dir.mkdir(parents=True, exist_ok=True)
@@ -662,9 +677,13 @@ def build_full_site(
         dist_dir,
     )
     _build_sitemap_and_robots(settings, comparisons, alternatives, dist_dir)
-    return {
+    stats: dict[str, Any] = {
         "comparison_pages": len(comparisons),
         "alternatives_pages": len(alternatives),
         "redirect_pages": len(redirect_routes),
-        "total_indexable_urls": 3 + len(comparisons) + len(alternatives),
+        "total_indexable_urls": 6 + len(comparisons) + len(alternatives),
     }
+    if return_details:
+        stats["_comparisons"] = comparisons
+        stats["_alternatives"] = alternatives
+    return stats
