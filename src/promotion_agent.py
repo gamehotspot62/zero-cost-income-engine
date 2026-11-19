@@ -13,6 +13,8 @@ from email.utils import format_datetime
 from pathlib import Path
 from typing import Any
 
+from src.brand_assets import BRAND_LOGO_SVG, head_favicon_links
+
 INDEXNOW_KEY = "stackpulseindexnow2026key"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 WEBSUB_HUB_URL = "https://pubsubhubbub.appspot.com/"
@@ -453,6 +455,7 @@ def _build_promotion_hub_html(
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Global Promotion &amp; Traffic Hub | {html.escape(site_name)}</title>
   <meta name="description" content="Automated search indexing, RSS/JSON feeds, AI discovery (llms.txt), and multi-channel promotion campaigns." />
+  {head_favicon_links("../")}
   <style>
     :root {{ --bg:#070b14; --surface:#0f172a; --surface-2:#1e293b; --border:#334155; --text:#f1f5f9; --muted:#94a3b8; --accent:#38bdf8; --accent-2:#22c55e; }}
     * {{ box-sizing:border-box; }}
@@ -461,6 +464,7 @@ def _build_promotion_hub_html(
     .container {{ max-width:1100px; margin:0 auto; padding:0 20px; }}
     header {{ border-bottom:1px solid var(--border); background:rgba(15,23,42,0.92); padding:14px 0; }}
     .nav {{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; }}
+    .brand {{ display:inline-flex; align-items:center; gap:10px; font-weight:800; color:#fff; }}
     .nav-links {{ display:flex; gap:18px; flex-wrap:wrap; font-size:0.92rem; }}
     .nav-links a {{ color:var(--muted); font-weight:500; }}
     .hero {{ padding:42px 0 26px; border-bottom:1px solid var(--border); }}
@@ -476,7 +480,7 @@ def _build_promotion_hub_html(
 <body>
   <header>
     <div class="container nav">
-      <a href="../index.html" style="font-weight:800; color:#fff;">{html.escape(site_name)} <span style="color:var(--accent);">$0 Stack</span></a>
+      <a class="brand" href="../index.html">{BRAND_LOGO_SVG}<span>{html.escape(site_name)} <span style="color:var(--accent);">$0 Stack</span></span></a>
       <nav class="nav-links">
         <a href="../index.html">Directory</a>
         <a href="../products/index.html">Products</a>
