@@ -258,5 +258,42 @@
     },
     "product_compiled": "products/zero-cost-stack-blueprint.md",
     "newsletter_status": "saved-locally"
+  },
+  {
+    "timestamp_utc": "2026-11-19T19:27:33.386911+00:00",
+    "mode": "full",
+    "offline": false,
+    "ingestion_mode": "live-web",
+    "signals_collected": 19,
+    "llm_usage": {
+      "gemini": 6,
+      "groq": 0,
+      "deterministic": 65
+    },
+    "site_stats": {
+      "comparison_pages": 42,
+      "alternatives_pages": 28,
+      "redirect_pages": 28,
+      "total_indexable_urls": 76
+    },
+    "product_compiled": "products/zero-cost-stack-blueprint.md",
+    "product_count": 4,
+    "newsletter_status": "saved-locally",
+    "promotion_stats": {
+      "indexnow_status": "http-202",
+      "websub_status": "http-204",
+      "urls_submitted": 75,
+      "feed_items": 14,
+      "campaigns_generated": 5,
+      "webhooks": {
+        "make_webhook": "not-configured",
+        "discord_webhook": "not-configured",
+        "devto_api": "not-configured"
+      },
+      "llms_file": "llms.txt",
+      "rss_feed": "feed.xml",
+      "json_feed": "feed.json",
+      "promotion_hub": "promotions/index.html"
+    }
   }
 ]
