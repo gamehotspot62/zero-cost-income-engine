@@ -1,22 +1,38 @@
 {
-  "fetched_at": "2026-11-20T07:08:50.838146+00:00",
+  "fetched_at": "2026-11-20T18:55:31.787695+00:00",
   "ingestion_mode": "live-web",
-  "signal_count": 18,
+  "signal_count": 16,
   "errors": [],
   "signals": [
     {
       "source": "GitHub",
       "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
       "url": "https://github.com/stablyai/orca",
-      "score": 130184,
+      "score": 130831,
       "topic": "AI & LLM APIs",
       "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
     },
     {
       "source": "GitHub",
+      "title": "thedotmack/claude-mem — Persistent Context Across Sessions for Every Agent –  Captures everything your agent does ",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "score": 118595,
+      "topic": "AI & LLM APIs",
+      "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla"
+    },
+    {
+      "source": "GitHub",
+      "title": "heygen-com/hyperframes — AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Descri",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "score": 87383,
+      "topic": "AI & LLM APIs",
+      "summary": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame."
+    },
+    {
+      "source": "GitHub",
       "title": "pingdotgg/t3code — The best way to control Claude Code, Codex and more from any computer or phone",
       "url": "https://github.com/pingdotgg/t3code",
-      "score": 66765,
+      "score": 67579,
       "topic": "Automation & Workflows",
       "summary": "The best way to control Claude Code, Codex and more from any computer or phone"
     },
@@ -24,105 +40,89 @@
       "source": "GitHub",
       "title": "PostHog/posthog — :hedgehog: PostHog is the leading platform for building self-driving products. Our develop",
       "url": "https://github.com/PostHog/posthog",
-      "score": 40980,
+      "score": 40989,
       "topic": "AI & LLM APIs",
       "summary": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – c"
     },
     {
       "source": "GitHub",
-      "title": "NVIDIA/OpenShell — OpenShell is the safe, private runtime for autonomous AI agents.",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "score": 21817,
-      "topic": "AI & LLM APIs",
-      "summary": "OpenShell is the safe, private runtime for autonomous AI agents."
-    },
-    {
-      "source": "GitHub",
-      "title": "mdiri-ai/SoduWork — The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-      "url": "https://github.com/mdiri-ai/SoduWork",
-      "score": 4462,
-      "topic": "AI & LLM APIs",
-      "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted."
-    },
-    {
-      "source": "GitHub",
-      "title": "ling-stack-org/ling-stack — Local-first AI teammate workspace. Bring your own models and keep project conversations, t",
-      "url": "https://github.com/ling-stack-org/ling-stack",
-      "score": 983,
-      "topic": "AI & LLM APIs",
-      "summary": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together."
-    },
-    {
-      "source": "GitHub",
-      "title": "AspirinCode/papers-for-molecular-design-using-DL — List of Molecular and Material design using Generative AI and Deep Learning ",
-      "url": "https://github.com/AspirinCode/papers-for-molecular-design-using-DL",
-      "score": 954,
-      "topic": "AI & LLM APIs",
-      "summary": "List of Molecular and Material design using Generative AI and Deep Learning "
-    },
-    {
-      "source": "GitHub",
-      "title": "zapplyjobs/awesome-ml-internships-2027 — Live AI and machine learning internships for students, refreshed through the Zapply job pi",
-      "url": "https://github.com/zapplyjobs/awesome-ml-internships-2027",
-      "score": 470,
-      "topic": "AI & LLM APIs",
-      "summary": "Live AI and machine learning internships for students, refreshed through the Zapply job pipeline."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Claude solves two open problems in the physics of black holes",
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "score": 461,
+      "title": "trungdq88/Awesome-Black-Friday-Cyber-Monday — Awesome apps, software, and SaaS deals on Black Friday.",
+      "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
+      "score": 7615,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (218 comments) relevant to developer builders."
+      "summary": "Awesome apps, software, and SaaS deals on Black Friday."
     },
     {
       "source": "Hacker News",
-      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
-      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
-      "score": 253,
+      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+      "url": "https://alpo.ge/remark.pdf",
+      "score": 1741,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (142 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (1179 comments) relevant to developer builders."
     },
     {
-      "source": "Hacker News",
-      "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
-      "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
-      "score": 206,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (40 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
-      "url": "https://github.com/openssl/openssl/pull/33652",
-      "score": 158,
+      "source": "GitHub",
+      "title": "nanocodexyz/nanocode — SDK for Frontier Embedded Agents.",
+      "url": "https://github.com/nanocodexyz/nanocode",
+      "score": 739,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (85 comments) relevant to developer builders."
+      "summary": "SDK for Frontier Embedded Agents."
     },
     {
       "source": "Hacker News",
-      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-      "url": "https://github.com/onlook-dev/onlook/",
-      "score": 111,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (75 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-      "score": 99,
+      "title": "I'll never buy Framework hardware again",
+      "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+      "score": 617,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (193 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (393 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "PostgreSQL 19",
-      "url": "https://www.postgresql.org/docs/release/19.0/",
-      "score": 80,
-      "topic": "Serverless Databases",
-      "summary": "Trending HN discussion (2 comments) relevant to developer builders."
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "score": 511,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (278 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+      "score": 495,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (256 comments) relevant to developer builders."
+    },
+    {
+      "source": "GitHub",
+      "title": "Override92/AiSList — Filter list for Ai Slop channels on YouTube",
+      "url": "https://github.com/Override92/AiSList",
+      "score": 429,
+      "topic": "AI & LLM APIs",
+      "summary": "Filter list for Ai Slop channels on YouTube"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "score": 193,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (84 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "score": 77,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (24 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
+      "score": 62,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (39 comments) relevant to developer builders."
     }
   ]
 }
