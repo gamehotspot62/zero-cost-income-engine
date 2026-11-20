@@ -1,22 +1,14 @@
 {
-  "fetched_at": "2026-11-19T20:08:08.227677+00:00",
+  "fetched_at": "2026-11-20T07:08:50.838146+00:00",
   "ingestion_mode": "live-web",
-  "signal_count": 19,
+  "signal_count": 18,
   "errors": [],
   "signals": [
     {
       "source": "GitHub",
-      "title": "n8n-io/n8n — Fair-code workflow automation platform with native AI capabilities. Combine visual buildin",
-      "url": "https://github.com/n8n-io/n8n",
-      "score": 211422,
-      "topic": "AI & LLM APIs",
-      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
-    },
-    {
-      "source": "GitHub",
       "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
       "url": "https://github.com/stablyai/orca",
-      "score": 129749,
+      "score": 130184,
       "topic": "AI & LLM APIs",
       "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
     },
@@ -24,105 +16,113 @@
       "source": "GitHub",
       "title": "pingdotgg/t3code — The best way to control Claude Code, Codex and more from any computer or phone",
       "url": "https://github.com/pingdotgg/t3code",
-      "score": 66257,
+      "score": 66765,
       "topic": "Automation & Workflows",
       "summary": "The best way to control Claude Code, Codex and more from any computer or phone"
     },
     {
       "source": "GitHub",
-      "title": "manaflow-ai/cmux — Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI codin",
-      "url": "https://github.com/manaflow-ai/cmux",
-      "score": 28834,
+      "title": "PostHog/posthog — :hedgehog: PostHog is the leading platform for building self-driving products. Our develop",
+      "url": "https://github.com/PostHog/posthog",
+      "score": 40980,
       "topic": "AI & LLM APIs",
-      "summary": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability."
+      "summary": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – c"
     },
     {
       "source": "GitHub",
-      "title": "mengxi-ream/read-frog — 🐸 Read Frog - Open-source AI language learning & flashcards, an Immersive Translate altern",
-      "url": "https://github.com/mengxi-ream/read-frog",
-      "score": 10486,
+      "title": "NVIDIA/OpenShell — OpenShell is the safe, private runtime for autonomous AI agents.",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "score": 21817,
       "topic": "AI & LLM APIs",
-      "summary": "🐸 Read Frog - Open-source AI language learning & flashcards, an Immersive Translate alternative | 🐸 陪读蛙 - 开源 AI 语言学习与闪词卡，沉浸式翻译替代"
+      "summary": "OpenShell is the safe, private runtime for autonomous AI agents."
     },
     {
       "source": "GitHub",
-      "title": "nightly-labs/openbot — A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok w",
-      "url": "https://github.com/nightly-labs/openbot",
-      "score": 9201,
+      "title": "mdiri-ai/SoduWork — The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "score": 4462,
       "topic": "AI & LLM APIs",
-      "summary": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration."
+      "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted."
     },
     {
       "source": "GitHub",
-      "title": "civitai/civitai — A repository of models, textual inversions, and more",
-      "url": "https://github.com/civitai/civitai",
-      "score": 7326,
+      "title": "ling-stack-org/ling-stack — Local-first AI teammate workspace. Bring your own models and keep project conversations, t",
+      "url": "https://github.com/ling-stack-org/ling-stack",
+      "score": 983,
       "topic": "AI & LLM APIs",
-      "summary": "A repository of models, textual inversions, and more"
+      "summary": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together."
     },
     {
       "source": "GitHub",
-      "title": "expo/exact — Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can",
-      "url": "https://github.com/expo/exact",
-      "score": 4723,
+      "title": "AspirinCode/papers-for-molecular-design-using-DL — List of Molecular and Material design using Generative AI and Deep Learning ",
+      "url": "https://github.com/AspirinCode/papers-for-molecular-design-using-DL",
+      "score": 954,
       "topic": "AI & LLM APIs",
-      "summary": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them."
+      "summary": "List of Molecular and Material design using Generative AI and Deep Learning "
     },
     {
-      "source": "Hacker News",
-      "title": "Anthropic hits $2T in Nasdaq debut",
-      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-      "score": 471,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (728 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-      "url": "https://verialabs.com/ruby2shell/",
-      "score": 339,
+      "source": "GitHub",
+      "title": "zapplyjobs/awesome-ml-internships-2027 — Live AI and machine learning internships for students, refreshed through the Zapply job pi",
+      "url": "https://github.com/zapplyjobs/awesome-ml-internships-2027",
+      "score": 470,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (139 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Distributed, high-performance blob storage on SQLite",
-      "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-      "score": 214,
-      "topic": "Serverless Databases",
-      "summary": "Trending HN discussion (60 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Nintendo takes Picofly firmware down from GitHub [video]",
-      "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-      "score": 212,
-      "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (76 comments) relevant to developer builders."
+      "summary": "Live AI and machine learning internships for students, refreshed through the Zapply job pipeline."
     },
     {
       "source": "Hacker News",
       "title": "Claude solves two open problems in the physics of black holes",
       "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "score": 202,
+      "score": 461,
       "topic": "Automation & Workflows",
-      "summary": "Trending HN discussion (67 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (218 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
-      "url": "https://thedataexchange.media/pete-warden-moonshine/",
-      "score": 164,
+      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "score": 253,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (152 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (142 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
-      "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
-      "score": 135,
+      "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+      "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+      "score": 206,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (102 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (40 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "score": 158,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (85 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "score": 111,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (75 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "score": 99,
+      "topic": "AI & LLM APIs",
+      "summary": "Trending HN discussion (193 comments) relevant to developer builders."
+    },
+    {
+      "source": "Hacker News",
+      "title": "PostgreSQL 19",
+      "url": "https://www.postgresql.org/docs/release/19.0/",
+      "score": 80,
+      "topic": "Serverless Databases",
+      "summary": "Trending HN discussion (2 comments) relevant to developer builders."
     }
   ]
 }
