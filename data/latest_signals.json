@@ -1,128 +1,128 @@
 {
-  "fetched_at": "2026-11-20T18:55:31.787695+00:00",
+  "fetched_at": "2026-11-21T07:00:20.623701+00:00",
   "ingestion_mode": "live-web",
-  "signal_count": 16,
+  "signal_count": 15,
   "errors": [],
   "signals": [
     {
       "source": "GitHub",
-      "title": "stablyai/orca — Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscri",
-      "url": "https://github.com/stablyai/orca",
-      "score": 130831,
+      "title": "nexu-io/open-design — The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motio",
+      "url": "https://github.com/nexu-io/open-design",
+      "score": 108733,
       "topic": "AI & LLM APIs",
-      "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime."
-    },
-    {
-      "source": "GitHub",
-      "title": "thedotmack/claude-mem — Persistent Context Across Sessions for Every Agent –  Captures everything your agent does ",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "score": 118595,
-      "topic": "AI & LLM APIs",
-      "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla"
-    },
-    {
-      "source": "GitHub",
-      "title": "heygen-com/hyperframes — AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Descri",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "score": 87383,
-      "topic": "AI & LLM APIs",
-      "summary": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame."
-    },
-    {
-      "source": "GitHub",
-      "title": "pingdotgg/t3code — The best way to control Claude Code, Codex and more from any computer or phone",
-      "url": "https://github.com/pingdotgg/t3code",
-      "score": 67579,
-      "topic": "Automation & Workflows",
-      "summary": "The best way to control Claude Code, Codex and more from any computer or phone"
-    },
-    {
-      "source": "GitHub",
-      "title": "PostHog/posthog — :hedgehog: PostHog is the leading platform for building self-driving products. Our develop",
-      "url": "https://github.com/PostHog/posthog",
-      "score": 40989,
-      "topic": "AI & LLM APIs",
-      "summary": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – c"
-    },
-    {
-      "source": "GitHub",
-      "title": "trungdq88/Awesome-Black-Friday-Cyber-Monday — Awesome apps, software, and SaaS deals on Black Friday.",
-      "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
-      "score": 7615,
-      "topic": "Automation & Workflows",
-      "summary": "Awesome apps, software, and SaaS deals on Black Friday."
+      "summary": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Sha"
     },
     {
       "source": "Hacker News",
       "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
       "url": "https://alpo.ge/remark.pdf",
-      "score": 1741,
+      "score": 2523,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (1179 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (1742 comments) relevant to developer builders."
     },
     {
-      "source": "GitHub",
-      "title": "nanocodexyz/nanocode — SDK for Frontier Embedded Agents.",
-      "url": "https://github.com/nanocodexyz/nanocode",
-      "score": 739,
+      "source": "Hacker News",
+      "title": "Hurried Announcement: Alessandro Masullo GRH",
+      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+      "score": 1868,
       "topic": "Automation & Workflows",
-      "summary": "SDK for Frontier Embedded Agents."
+      "summary": "Trending HN discussion (859 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "I'll never buy Framework hardware again",
-      "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
-      "score": 617,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (393 comments) relevant to developer builders."
+      "title": "Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "score": 893,
+      "topic": "Automation & Workflows",
+      "summary": "Trending HN discussion (164 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-      "url": "https://architectlabs.com/blog/frostbite",
-      "score": 511,
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "score": 248,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (278 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (515 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "If you can't explain something in simple terms, you don't understand it (2017)",
-      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
-      "score": 495,
+      "title": "NINLIVE: The Nine Inch Nails live archive",
+      "url": "https://ninlive.com/",
+      "score": 211,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (256 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (56 comments) relevant to developer builders."
     },
     {
       "source": "GitHub",
-      "title": "Override92/AiSList — Filter list for Ai Slop channels on YouTube",
-      "url": "https://github.com/Override92/AiSList",
-      "score": 429,
+      "title": "SandyPandyMandy/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/SandyPandyMandy/ai--manus",
+      "score": 201,
       "topic": "AI & LLM APIs",
-      "summary": "Filter list for Ai Slop channels on YouTube"
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "stancaedy10-glitch/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/stancaedy10-glitch/manus--ai",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
+    },
+    {
+      "source": "GitHub",
+      "title": "SandyPandyMandy/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/SandyPandyMandy/manus--ai",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
+    },
+    {
+      "source": "GitHub",
+      "title": "python001-dev/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/python001-dev/manus--ai",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
+    },
+    {
+      "source": "GitHub",
+      "title": "WLfear/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/WLfear/ai--manus",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
+    },
+    {
+      "source": "GitHub",
+      "title": "kazim768/manus--ai — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/kazim768/manus--ai",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment. "
+    },
+    {
+      "source": "GitHub",
+      "title": "kazim768/ai--manus — AI Manus is a general-purpose AI Agent system that supports running various tools and oper",
+      "url": "https://github.com/kazim768/ai--manus",
+      "score": 201,
+      "topic": "AI & LLM APIs",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment."
     },
     {
       "source": "Hacker News",
-      "title": "Language Models Can Rewrite Their Own Weights",
-      "url": "https://arxiv.org/abs/2611.21885",
-      "score": 193,
+      "title": "Why the Airbus A321XLR often gets stuck climbing for first few hours of flight",
+      "url": "https://simpleflying.com/airbus-a321xlr-often-stuck-climbing-1st-few-hours-flight/",
+      "score": 107,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (84 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (72 comments) relevant to developer builders."
     },
     {
       "source": "Hacker News",
-      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
-      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
-      "score": 77,
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "url": "http://ricapar.net/ClawDOS/",
+      "score": 14,
       "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (24 comments) relevant to developer builders."
-    },
-    {
-      "source": "Hacker News",
-      "title": "Anthropic shares tank after IPO as the Nasdaq erases 2026 gains",
-      "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394",
-      "score": 62,
-      "topic": "AI & LLM APIs",
-      "summary": "Trending HN discussion (39 comments) relevant to developer builders."
+      "summary": "Trending HN discussion (2 comments) relevant to developer builders."
     }
   ]
 }
