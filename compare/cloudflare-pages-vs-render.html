@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudflare Pages &amp; Workers vs Render Free Tier | StackPulse AI</title>
+  <meta name="description" content="Compare Cloudflare Pages &amp; Workers and Render free-tier limits, scaling prices, and open-source alternatives." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/favicon.png" />
+  <link rel="alternate" type="application/rss+xml" title="StackPulse AI RSS" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.xml" />
+  <link rel="alternate" type="application/feed+json" title="StackPulse AI JSON Feed" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.json" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I use Cloudflare Pages & Workers or Render completely free for commercial projects?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudflare Pages & Workers offers Unlimited sites & bandwidth, 500 builds/mo, 100k Worker requests/day. Render provides 100 GB bandwidth for static sites; 750 free web service hours (spins down idle). Always check each vendor's commercial terms—for example, Cloudflare Pages & Workers is ideal for high-traffic programmatic seo sites and $0 static saas frontends."}}, {"@type": "Question", "name": "Which has lower scaling costs after leaving the free tier: Cloudflare Pages & Workers or Render?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudflare Pages & Workers transitions to paid usage at $5/mo Workers Paid, whereas Render starts at $7/mo Starter web service."}}, {"@type": "Question", "name": "What is the best open-source alternative to Cloudflare Pages & Workers and Render?", "acceptedAnswer": {"@type": "Answer", "text": "Builders wanting zero vendor lock-in typically pair Caddy / Nginx on VPS or Dokku / Coolify with self-hosted containers or GitHub Actions."}}]}</script>
+  <style>
+:root {
+  --bg: #070b14;
+  --surface: #0f172a;
+  --surface-2: #1e293b;
+  --border: #334155;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+  --warn: #f59e0b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.nav {
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.92);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 20;
+}
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 12px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.brand span { color: var(--accent); }
+.brand:hover { text-decoration: none; }
+.sp-logo-mark {
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.brand:hover .sp-logo-mark {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.55));
+}
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links { display: flex; gap: 18px; font-size: 0.92rem; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); font-weight: 500; }
+.nav-links a:hover { color: #fff; }
+.hero { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+h1 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.15; margin: 14px 0 12px; }
+h2 { font-size: 1.45rem; margin: 32px 0 14px; }
+h3 { font-size: 1.1rem; margin: 0 0 8px; }
+.lead { color: var(--muted); font-size: 1.08rem; max-width: 740px; margin: 0 0 22px; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #04111f;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.btn:hover { opacity: 0.92; text-decoration: none; }
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-green { background: var(--accent-2); color: #052e16; }
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid-2 { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.meta { font-size: 0.84rem; color: var(--muted); }
+.score {
+  font-weight: 800;
+  color: var(--accent-2);
+  background: rgba(34, 197, 94, 0.12);
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+table { width: 100%; border-collapse: collapse; margin: 16px 0; background: var(--surface); border-radius: 10px; overflow: hidden; }
+th, td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+th { background: var(--surface-2); font-size: 0.9rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 22px; }
+.filter-btn {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.86rem;
+}
+.filter-btn.active { background: var(--accent); color: #04111f; border-color: var(--accent); font-weight: 700; }
+.search-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 8px;
+  min-width: 240px;
+  font-size: 0.94rem;
+}
+.banner {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(34, 197, 94, 0.10));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 12px;
+  padding: 22px;
+  margin: 26px 0;
+}
+footer {
+  margin-top: 56px;
+  padding: 28px 0 42px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html"><svg class="sp-logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+  <defs>
+    <linearGradient id="spNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="spNavPulse" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#070b14" stroke="url(#spNavGrad)" stroke-width="2.5"/>
+  <polygon points="32,9 51,20 51,44 32,55 13,44 13,20" fill="#0f172a" stroke="url(#spNavGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="14,34 22,34 27,21 34,44 40,28 45,34 50,34" fill="none" stroke="url(#spNavPulse)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="34" r="2.6" fill="#38bdf8"/>
+  <circle cx="50" cy="34" r="2.6" fill="#22c55e"/>
+</svg><span>StackPulse AI <span style="color:var(--accent);">$0 Stack</span></span></a>
+      <nav class="nav-links">
+        <a href="../index.html#tools">Tools</a>
+        <a href="../index.html#comparisons">Comparisons</a>
+        <a href="../products/index.html">Products</a>
+        <a href="../promotions/index.html">Promotion Hub</a>
+        <a href="../newsletter/latest-issue.html">Newsletter</a>
+        <a href="../dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+<section class="hero">
+  <span class="pill">Cloud Hosting &amp; Edge Comparison</span>
+  <h1>Cloudflare Pages &amp; Workers vs Render: 2026 Free Tier &amp; Cost Breakdown</h1>
+  <p class="lead">For zero-investment builders in Cloud Hosting &amp; Edge, Cloudflare Pages &amp; Workers edges ahead with a 9.8/10 stack rating because it maximizes runway via: Unlimited sites &amp; bandwidth, 500 builds/mo, 100k Worker requests/day. Choose Render specifically if your workload prioritizes long-running python apis, bots, and full-stack container deployments.</p>
+  <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <a class="btn" href="../go/cloudflare-pages.html" rel="sponsored noopener">Try Cloudflare Pages &amp; Workers Free &rarr;</a>
+    <a class="btn btn-secondary" href="../go/render.html" rel="sponsored noopener">Try Render Free &rarr;</a>
+  </div>
+</section>
+
+<section>
+  <h2>Head-to-Head Specification Matrix</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Cloudflare Pages &amp; Workers</th>
+        <th>Render</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Zero-Cost Rating</strong></td><td><span class="score">9.8/10</span></td><td><span class="score">8.8/10</span></td></tr>
+      <tr><td><strong>Free Tier Quota</strong></td><td>Unlimited sites &amp; bandwidth, 500 builds/mo, 100k Worker requests/day</td><td>100 GB bandwidth for static sites; 750 free web service hours (spins down idle)</td></tr>
+      <tr><td><strong>First Paid Tier</strong></td><td>$5/mo Workers Paid</td><td>$7/mo Starter web service</td></tr>
+      <tr><td><strong>Best Built For</strong></td><td>High-traffic programmatic SEO sites and $0 static SaaS frontends</td><td>Long-running Python APIs, bots, and full-stack container deployments</td></tr>
+      <tr><td><strong>Open-Source Escape Hatch</strong></td><td>Caddy / Nginx on VPS</td><td>Dokku / Coolify</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="grid-2">
+  <div class="card">
+    <h3>Why Pick Cloudflare Pages &amp; Workers</h3>
+    <ul><li>Truly unlimited free bandwidth (no surprise traffic bills)</li><li>Global edge CDN across 300+ cities</li><li>Commercial usage allowed on free tier</li></ul>
+    <a class="btn" href="../go/cloudflare-pages.html" rel="sponsored noopener">Launch Cloudflare Pages &amp; Workers</a>
+  </div>
+  <div class="card">
+    <h3>Why Pick Render</h3>
+    <ul><li>Supports full Docker, Python, and background workers</li><li>Simple $7/mo step up when scaling past free tier</li><li>Clean Blueprints (`render.yaml`) infrastructure-as-code</li></ul>
+    <a class="btn" href="../go/render.html" rel="sponsored noopener">Launch Render</a>
+  </div>
+</section>
+
+<section class="banner">
+  <h2>Total Cost of Ownership &amp; Migration Advice</h2>
+  <p>At $0/month MVP scale, both Cloudflare Pages &amp; Workers and Render eliminate fixed server bills. When traffic scales past free quotas, Cloudflare Pages &amp; Workers starts at $5/mo Workers Paid while Render starts at $7/mo Starter web service.</p>
+  <p class="meta"><strong>Architect Tip:</strong> Keep your business logic decoupled via standard interfaces or Caddy / Nginx on VPS so you can switch between Cloudflare Pages &amp; Workers and Render without rewriting core workflows.</p>
+</section>
+
+<section>
+  <h2>Frequently Asked Questions</h2>
+  <div class='card' style='margin-bottom:12px;'><h3>Can I use Cloudflare Pages &amp; Workers or Render completely free for commercial projects?</h3><p>Cloudflare Pages &amp; Workers offers Unlimited sites &amp; bandwidth, 500 builds/mo, 100k Worker requests/day. Render provides 100 GB bandwidth for static sites; 750 free web service hours (spins down idle). Always check each vendor&#x27;s commercial terms—for example, Cloudflare Pages &amp; Workers is ideal for high-traffic programmatic seo sites and $0 static saas frontends.</p></div><div class='card' style='margin-bottom:12px;'><h3>Which has lower scaling costs after leaving the free tier: Cloudflare Pages &amp; Workers or Render?</h3><p>Cloudflare Pages &amp; Workers transitions to paid usage at $5/mo Workers Paid, whereas Render starts at $7/mo Starter web service.</p></div><div class='card' style='margin-bottom:12px;'><h3>What is the best open-source alternative to Cloudflare Pages &amp; Workers and Render?</h3><p>Builders wanting zero vendor lock-in typically pair Caddy / Nginx on VPS or Dokku / Coolify with self-hosted containers or GitHub Actions.</p></div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p><strong>StackPulse AI</strong> &mdash; Automated zero-cost research, promotion &amp; comparison engine running on GitHub Actions. <a href="../feed.xml">RSS Feed</a> &bull; <a href="../llms.txt">llms.txt</a>. Some outbound links may earn a referral commission at zero cost to you.</p>
+    </div>
+  </footer>
+</body>
+</html>

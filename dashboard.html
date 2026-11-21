@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Owner Telemetry Dashboard | StackPulse AI</title>
+  <meta name="description" content="Operational metrics for StackPulse AI automated income engine." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="alternate" type="application/rss+xml" title="StackPulse AI RSS" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.xml" />
+  <link rel="alternate" type="application/feed+json" title="StackPulse AI JSON Feed" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.json" />
+  
+  <style>
+:root {
+  --bg: #070b14;
+  --surface: #0f172a;
+  --surface-2: #1e293b;
+  --border: #334155;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+  --warn: #f59e0b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.nav {
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.92);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 20;
+}
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 12px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.brand span { color: var(--accent); }
+.brand:hover { text-decoration: none; }
+.sp-logo-mark {
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.brand:hover .sp-logo-mark {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.55));
+}
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links { display: flex; gap: 18px; font-size: 0.92rem; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); font-weight: 500; }
+.nav-links a:hover { color: #fff; }
+.hero { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+h1 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.15; margin: 14px 0 12px; }
+h2 { font-size: 1.45rem; margin: 32px 0 14px; }
+h3 { font-size: 1.1rem; margin: 0 0 8px; }
+.lead { color: var(--muted); font-size: 1.08rem; max-width: 740px; margin: 0 0 22px; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #04111f;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.btn:hover { opacity: 0.92; text-decoration: none; }
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-green { background: var(--accent-2); color: #052e16; }
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid-2 { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.meta { font-size: 0.84rem; color: var(--muted); }
+.score {
+  font-weight: 800;
+  color: var(--accent-2);
+  background: rgba(34, 197, 94, 0.12);
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+table { width: 100%; border-collapse: collapse; margin: 16px 0; background: var(--surface); border-radius: 10px; overflow: hidden; }
+th, td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+th { background: var(--surface-2); font-size: 0.9rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 22px; }
+.filter-btn {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.86rem;
+}
+.filter-btn.active { background: var(--accent); color: #04111f; border-color: var(--accent); font-weight: 700; }
+.search-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 8px;
+  min-width: 240px;
+  font-size: 0.94rem;
+}
+.banner {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(34, 197, 94, 0.10));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 12px;
+  padding: 22px;
+  margin: 26px 0;
+}
+footer {
+  margin-top: 56px;
+  padding: 28px 0 42px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><svg class="sp-logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+  <defs>
+    <linearGradient id="spNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="spNavPulse" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#070b14" stroke="url(#spNavGrad)" stroke-width="2.5"/>
+  <polygon points="32,9 51,20 51,44 32,55 13,44 13,20" fill="#0f172a" stroke="url(#spNavGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="14,34 22,34 27,21 34,44 40,28 45,34 50,34" fill="none" stroke="url(#spNavPulse)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="34" r="2.6" fill="#38bdf8"/>
+  <circle cx="50" cy="34" r="2.6" fill="#22c55e"/>
+</svg><span>StackPulse AI <span style="color:var(--accent);">$0 Stack</span></span></a>
+      <nav class="nav-links">
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#comparisons">Comparisons</a>
+        <a href="products/index.html">Products</a>
+        <a href="promotions/index.html">Promotion Hub</a>
+        <a href="newsletter/latest-issue.html">Newsletter</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+<section class="hero">
+  <span class="pill">Owner Operations Console</span>
+  <h1>Autonomous Income Engine Telemetry</h1>
+  <p class="lead">Live build diagnostics for your $0-overhead programmatic SEO, affiliate routing, newsletter, and digital product pipeline.</p>
+</section>
+
+<section class="grid">
+  <div class="card"><h3>Total Static Assets</h3><p style="font-size:2rem; font-weight:800; margin:6px 0;">101</p><p class="meta">42 comparisons &bull; 28 alternatives &bull; 28 redirects</p></div>
+  <div class="card"><h3>Signal Ingestion Mode</h3><p style="font-size:1.5rem; font-weight:800; margin:6px 0;">live-web</p><p class="meta">15 signals processed at 2026-11-21T07:00:20Z</p></div>
+  <div class="card"><h3>AI Synthesis Usage</h3><p style="font-size:1.25rem; font-weight:800; margin:6px 0;">Gemini: 6 | Groq: 0</p><p class="meta">Deterministic fallback syntheses: 65 ($0.00 cost)</p></div>
+  <div class="card"><h3>Affiliate Setup Status</h3><p style="font-size:1.5rem; font-weight:800; margin:6px 0;">Avg Est. EPC: $1.23</p><p class="meta">5 URLs still have placeholder IDs in config/affiliates.json</p></div>
+</section>
+
+<section class="grid-2" style="margin-top:24px;">
+  <div class="card">
+    <h3>Digital Product Storefront (4 Offers)</h3>
+    <p><strong>2026 Zero-Cost Cloud &amp; AI Stack Blueprint + Automation Prompt Pack</strong> ($19) + Free Cheat Sheet</p>
+    <p class="meta">Compiled storefront: <code>products/index.html</code> (28 tools)</p>
+    <a class="btn btn-secondary" href="products/index.html">Open Digital Storefront</a>
+  </div>
+  <div class="card">
+    <h3>Newsletter &amp; Global Promotion Agent</h3>
+    <p><strong>Build AI Design Agencies for Free with Open Source</strong></p>
+    <p class="meta">Dispatch status: <code>saved-locally</code></p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <a class="btn btn-secondary" href="newsletter/latest-issue.html">Preview Newsletter</a>
+      <a class="btn btn-secondary" href="promotions/index.html">Global Promotion Hub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Affiliate Redirect Router Matrix</h2>
+  <table>
+    <thead><tr><th>Tool</th><th>Local Cloaked Route</th><th>Est. EPC</th><th>Program Notes</th><th>Config Status</th></tr></thead>
+    <tbody><tr><td>Google Gemini API (AI Studio)</td><td><code>/go/google-gemini-api.html</code></td><td>$0.45</td><td>Partner / Cloud referral credit or traffic funnel to AI templates</td><td>Ready</td></tr><tr><td>Groq Cloud API</td><td><code>/go/groq-cloud.html</code></td><td>$0.40</td><td>Ecosystem builder funnel &amp; developer tool kit upsells</td><td>Ready</td></tr><tr><td>OpenRouter</td><td><code>/go/openrouter.html</code></td><td>$0.55</td><td>Developer affiliate &amp; template monetization funnel</td><td>Ready</td></tr><tr><td>Hugging Face Inference</td><td><code>/go/huggingface-inference.html</code></td><td>$0.35</td><td>Referral funnel to Hugging Face PRO &amp; AI starter kits</td><td>Ready</td></tr><tr><td>Supabase</td><td><code>/go/supabase.html</code></td><td>$1.25</td><td>Partner / SaaS starter kit affiliate (20%-30% ecosystem tools)</td><td>Needs Your ID</td></tr><tr><td>Neon Serverless Postgres</td><td><code>/go/neon-postgres.html</code></td><td>$0.95</td><td>Developer infra partner / starter template upsells</td><td>Needs Your ID</td></tr><tr><td>Turso (libSQL)</td><td><code>/go/turso-sqlite.html</code></td><td>$0.85</td><td>High free quota makes conversion sticky for SaaS founders</td><td>Needs Your ID</td></tr><tr><td>Cloudflare D1</td><td><code>/go/cloudflare-d1.html</code></td><td>$0.60</td><td>Low $5 paid jump makes edge stack migration tutorials high-converting</td><td>Ready</td></tr><tr><td>Cloudflare Pages &amp; Workers</td><td><code>/go/cloudflare-pages.html</code></td><td>$0.70</td><td>Core zero-cost hosting anchor for pSEO &amp; affiliate funnels</td><td>Ready</td></tr><tr><td>Vercel</td><td><code>/go/vercel.html</code></td><td>$1.10</td><td>High intent developer hosting; Pro upgrades often needed for commercial apps</td><td>Ready</td></tr><tr><td>Render</td><td><code>/go/render.html</code></td><td>$1.40</td><td>Recurring cloud hosting affiliate / referral credits</td><td>Needs Your ID</td></tr><tr><td>Railway</td><td><code>/go/railway-cloud.html</code></td><td>$1.35</td><td>Developer cloud referral credits &amp; high-retention SaaS infra funnel</td><td>Ready</td></tr><tr><td>Lemon Squeezy</td><td><code>/go/lemon-squeezy.html</code></td><td>$2.10</td><td>Free to join MoR + built-in affiliate marketplace commissions (10%-50%)</td><td>Ready</td></tr><tr><td>Gumroad</td><td><code>/go/gumroad.html</code></td><td>$1.65</td><td>Massive affiliate marketplace where creators pay 10%-50% per sale</td><td>Ready</td></tr><tr><td>Stripe Payment Links</td><td><code>/go/stripe-checkout.html</code></td><td>$1.20</td><td>Best conversion rate for B2B sponsor slots and consulting retainers</td><td>Ready</td></tr><tr><td>Polar.sh</td><td><code>/go/polar-sh.html</code></td><td>$1.75</td><td>Modern Lemon Squeezy alternative with lower fees and GitHub repo access gating</td><td>Ready</td></tr><tr><td>GitHub Actions</td><td><code>/go/github-actions.html</code></td><td>$0.50</td><td>Core zero-cost compute engine replacing paid VPS/Zapier subscriptions</td><td>Ready</td></tr><tr><td>Make (Integromat)</td><td><code>/go/make-automation.html</code></td><td>$2.40</td><td>20% recurring affiliate commission for 12-24 months via PartnerStack</td><td>Ready</td></tr><tr><td>n8n Workflow Automation</td><td><code>/go/n8n-cloud.html</code></td><td>$2.80</td><td>30% recurring commission for 12 months via PartnerStack</td><td>Needs Your ID</td></tr><tr><td>Activepieces</td><td><code>/go/activepieces.html</code></td><td>$1.60</td><td>High-growth open-source automation tool for zero-budget teams</td><td>Ready</td></tr><tr><td>Cursor AI Editor</td><td><code>/go/cursor-ai.html</code></td><td>$1.50</td><td>High-demand developer IDE driving developer tool &amp; AI template conversions</td><td>Ready</td></tr><tr><td>Windsurf (Codeium)</td><td><code>/go/windsurf-ide.html</code></td><td>$1.40</td><td>Lower entry pricing ($15/mo) makes Cursor alternative comparisons convert well</td><td>Ready</td></tr><tr><td>GitHub Copilot Free</td><td><code>/go/github-copilot.html</code></td><td>$0.90</td><td>Core $0 entry point inside VS Code and GitHub ecosystem</td><td>Ready</td></tr><tr><td>Replit</td><td><code>/go/replit-agent.html</code></td><td>$1.90</td><td>High-converting non-technical founder &amp; rapid prototype affiliate funnel</td><td>Ready</td></tr><tr><td>Resend</td><td><code>/go/resend-email.html</code></td><td>$1.10</td><td>Modern SendGrid alternative driving SaaS infrastructure conversions</td><td>Ready</td></tr><tr><td>Buttondown</td><td><code>/go/buttondown-email.html</code></td><td>$1.25</td><td>Ideal zero-cost API-first newsletter companion for automated digests</td><td>Ready</td></tr><tr><td>PostHog</td><td><code>/go/posthog-analytics.html</code></td><td>$1.45</td><td>Massive free tier makes it the #1 conversion recommendation for SaaS founders</td><td>Ready</td></tr><tr><td>Plausible / Umami Analytics</td><td><code>/go/plausible-ce.html</code></td><td>$1.05</td><td>High-intent privacy Google Analytics alternative for pSEO publishers</td><td>Ready</td></tr></tbody>
+  </table>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p><strong>StackPulse AI</strong> &mdash; Automated zero-cost research, promotion &amp; comparison engine running on GitHub Actions. <a href="feed.xml">RSS Feed</a> &bull; <a href="llms.txt">llms.txt</a>. Some outbound links may earn a referral commission at zero cost to you.</p>
+    </div>
+  </footer>
+</body>
+</html>

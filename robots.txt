@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /go/
+Sitemap: https://gamehotspot62.github.io/zero-cost-income-engine/sitemap.xml
+Sitemap: https://gamehotspot62.github.io/zero-cost-income-engine/sitemap-v2.xml
+Sitemap: https://gamehotspot62.github.io/zero-cost-income-engine/sitemap.txt

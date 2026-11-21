@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero-Cost Developer Stack &amp; SaaS Free-Tier Engine | StackPulse AI</title>
+  <meta name="description" content="Autonomous Zero-Cost Developer Stack &amp; Free-Tier Intelligence" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="alternate" type="application/rss+xml" title="StackPulse AI RSS" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.xml" />
+  <link rel="alternate" type="application/feed+json" title="StackPulse AI JSON Feed" href="https://gamehotspot62.github.io/zero-cost-income-engine/feed.json" />
+  
+  <style>
+:root {
+  --bg: #070b14;
+  --surface: #0f172a;
+  --surface-2: #1e293b;
+  --border: #334155;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+  --warn: #f59e0b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header.nav {
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.92);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 20;
+}
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 12px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.brand span { color: var(--accent); }
+.brand:hover { text-decoration: none; }
+.sp-logo-mark {
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.brand:hover .sp-logo-mark {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.55));
+}
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links { display: flex; gap: 18px; font-size: 0.92rem; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); font-weight: 500; }
+.nav-links a:hover { color: #fff; }
+.hero { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+h1 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.15; margin: 14px 0 12px; }
+h2 { font-size: 1.45rem; margin: 32px 0 14px; }
+h3 { font-size: 1.1rem; margin: 0 0 8px; }
+.lead { color: var(--muted); font-size: 1.08rem; max-width: 740px; margin: 0 0 22px; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #04111f;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.btn:hover { opacity: 0.92; text-decoration: none; }
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-green { background: var(--accent-2); color: #052e16; }
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid-2 { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.meta { font-size: 0.84rem; color: var(--muted); }
+.score {
+  font-weight: 800;
+  color: var(--accent-2);
+  background: rgba(34, 197, 94, 0.12);
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+table { width: 100%; border-collapse: collapse; margin: 16px 0; background: var(--surface); border-radius: 10px; overflow: hidden; }
+th, td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+th { background: var(--surface-2); font-size: 0.9rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 22px; }
+.filter-btn {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.86rem;
+}
+.filter-btn.active { background: var(--accent); color: #04111f; border-color: var(--accent); font-weight: 700; }
+.search-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 8px;
+  min-width: 240px;
+  font-size: 0.94rem;
+}
+.banner {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(34, 197, 94, 0.10));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 12px;
+  padding: 22px;
+  margin: 26px 0;
+}
+footer {
+  margin-top: 56px;
+  padding: 28px 0 42px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><svg class="sp-logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+  <defs>
+    <linearGradient id="spNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="spNavPulse" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#070b14" stroke="url(#spNavGrad)" stroke-width="2.5"/>
+  <polygon points="32,9 51,20 51,44 32,55 13,44 13,20" fill="#0f172a" stroke="url(#spNavGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="14,34 22,34 27,21 34,44 40,28 45,34 50,34" fill="none" stroke="url(#spNavPulse)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="34" r="2.6" fill="#38bdf8"/>
+  <circle cx="50" cy="34" r="2.6" fill="#22c55e"/>
+</svg><span>StackPulse AI <span style="color:var(--accent);">$0 Stack</span></span></a>
+      <nav class="nav-links">
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#comparisons">Comparisons</a>
+        <a href="products/index.html">Products</a>
+        <a href="promotions/index.html">Promotion Hub</a>
+        <a href="newsletter/latest-issue.html">Newsletter</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+<section class="hero">
+  <div class="hero-head">
+    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="96" height="96" role="img" aria-label="StackPulse AI Quantum Neural Core">
+  <defs>
+    <linearGradient id="spHeroRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="spHeroGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#22c55e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#spHeroGlow)"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="url(#spHeroRing)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.65">
+    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="22s" repeatCount="indefinite"/>
+  </circle>
+  <polygon points="60,16 98,38 98,82 60,104 22,82 22,38" fill="#0b1222" stroke="url(#spHeroRing)" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="60,26 89,43 89,77 60,94 31,77 31,43" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.45"/>
+  <polyline points="24,62 38,62 47,39 58,83 69,48 78,62 96,62" fill="none" stroke="url(#spHeroRing)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="24,62 38,62 47,39 58,83 69,48 78,62 96,62" fill="none" stroke="#f8fafc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  <circle cx="24" cy="62" r="4" fill="#38bdf8"/>
+  <circle cx="47" cy="39" r="3.5" fill="#f8fafc"/>
+  <circle cx="58" cy="83" r="3.5" fill="#22c55e"/>
+  <circle cx="96" cy="62" r="4" fill="#22c55e"/>
+</svg></div>
+    <div>
+      <span class="pill">100% Autonomous &bull; $0 Infrastructure</span>
+      <h1 style="margin-top:10px;">Build &amp; Monetize Online with Verified $0 Free-Tier Stacks</h1>
+    </div>
+  </div>
+  <p class="lead">
+    StackPulse AI autonomously tracks developer ecosystems daily,
+    compiles 42 head-to-head comparisons and 28 open-source migration guides,
+    and updates automatically via GitHub Actions.
+  </p>
+  <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <a class="btn btn-green" href="products/index.html">Explore 4 Digital Products &amp; Free Cheat Sheet</a>
+    <a class="btn" href="https://hotspot41.gumroad.com/l/ryqznu">Get Blueprint Pack ($19)</a>
+    <a class="btn btn-secondary" href="promotions/index.html">Global Promotion Hub</a>
+    <a class="btn btn-secondary" href="newsletter/latest-issue.html">AI Digest</a>
+  </div>
+</section>
+
+<section id="tools">
+  <h2>Zero-Cost Stack Directory (28 Verified Tools)</h2>
+  <div class="filter-bar">
+    <input id="toolSearch" class="search-input" type="search" placeholder="Search Supabase, Gemini, Groq, Lemon Squeezy..." />
+    <button class="filter-btn active" data-cat="ALL">All Categories</button><button class="filter-btn" data-cat="AI &amp; LLM APIs">AI &amp; LLM APIs</button><button class="filter-btn" data-cat="Serverless Databases">Serverless Databases</button><button class="filter-btn" data-cat="Cloud Hosting &amp; Edge">Cloud Hosting &amp; Edge</button><button class="filter-btn" data-cat="Payments &amp; MoR">Payments &amp; MoR</button><button class="filter-btn" data-cat="Automation &amp; Workflows">Automation &amp; Workflows</button><button class="filter-btn" data-cat="AI Coding &amp; Agent IDEs">AI Coding &amp; Agent IDEs</button><button class="filter-btn" data-cat="Email, Growth &amp; Analytics">Email, Growth &amp; Analytics</button>
+  </div>
+  <div class="grid" id="toolGrid">
+<article class="card tool-card" data-cat="Automation &amp; Workflows" data-search="github actions automation &amp; workflows event-driven ci/cd and cron compute runner powering zero-server autonomous agents.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Automation &amp; Workflows</span>
+    <span class="score">9.9/10</span>
+  </div>
+  <h3 style="margin-top:8px;">GitHub Actions</h3>
+  <p class="meta">Event-driven CI/CD and cron compute runner powering zero-server autonomous agents.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Unlimited minutes on public repos; 2,000 mins/mo on private repos</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/github-actions.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/github-actions-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Cloud Hosting &amp; Edge" data-search="cloudflare pages &amp; workers cloud hosting &amp; edge unlimited-bandwidth static hosting plus 100k/day serverless edge worker invocations.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Cloud Hosting &amp; Edge</span>
+    <span class="score">9.8/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Cloudflare Pages &amp; Workers</h3>
+  <p class="meta">Unlimited-bandwidth static hosting plus 100k/day serverless edge worker invocations.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Unlimited sites &amp; bandwidth, 500 builds/mo, 100k Worker requests/day</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/cloudflare-pages.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/cloudflare-pages-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI &amp; LLM APIs" data-search="google gemini api (ai studio) ai &amp; llm apis generous permanent free tier with multimodal reasoning and long context windows.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI &amp; LLM APIs</span>
+    <span class="score">9.6/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Google Gemini API (AI Studio)</h3>
+  <p class="meta">Generous permanent free tier with multimodal reasoning and long context windows.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free tier via Google AI Studio (RPM/RPD limits, no credit card required to start)</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/google-gemini-api.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/google-gemini-api-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Payments &amp; MoR" data-search="lemon squeezy payments &amp; mor all-in-one merchant of record handling global vat/sales tax, saas subscriptions, and affiliates.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Payments &amp; MoR</span>
+    <span class="score">9.6/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Lemon Squeezy</h3>
+  <p class="meta">All-in-one Merchant of Record handling global VAT/sales tax, SaaS subscriptions, and affiliates.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> $0/month fixed cost; 5% + $0.50 only when a sale happens</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/lemon-squeezy.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/lemon-squeezy-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Email, Growth &amp; Analytics" data-search="posthog email, growth &amp; analytics all-in-one product analytics, session replays, feature flags, and a/b experiments.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Email, Growth &amp; Analytics</span>
+    <span class="score">9.6/10</span>
+  </div>
+  <h3 style="margin-top:8px;">PostHog</h3>
+  <p class="meta">All-in-one product analytics, session replays, feature flags, and A/B experiments.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 1M analytics events/mo + 5,000 session recordings + 1M feature flag requests free</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/posthog-analytics.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/posthog-analytics-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Serverless Databases" data-search="supabase serverless databases open-source postgres platform with built-in auth, edge functions, and pgvector.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Serverless Databases</span>
+    <span class="score">9.5/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Supabase</h3>
+  <p class="meta">Open-source Postgres platform with built-in auth, edge functions, and pgvector.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 2 active free projects, 500MB database, 50,000 monthly active users, 5GB egress</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/supabase.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/supabase-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Payments &amp; MoR" data-search="polar.sh payments &amp; mor open-source merchant of record built for developers selling saas, licenses, and digital kits.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Payments &amp; MoR</span>
+    <span class="score">9.5/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Polar.sh</h3>
+  <p class="meta">Open-source Merchant of Record built for developers selling SaaS, licenses, and digital kits.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> $0/month fixed cost; 4% + $0.40 only when a sale happens</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/polar-sh.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/polar-sh-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI Coding &amp; Agent IDEs" data-search="cursor ai editor ai coding &amp; agent ides ai-first code editor with multi-file agent edits, codebase indexing, and tab autocomplete.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI Coding &amp; Agent IDEs</span>
+    <span class="score">9.5/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Cursor AI Editor</h3>
+  <p class="meta">AI-first code editor with multi-file agent edits, codebase indexing, and Tab autocomplete.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free Hobby tier with limited Agent completions &amp; Tab suggestions</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/cursor-ai.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/cursor-ai-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Serverless Databases" data-search="turso (libsql) serverless databases edge-replicated sqlite database built on libsql for ultra-low-latency reads.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Serverless Databases</span>
+    <span class="score">9.4/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Turso (libSQL)</h3>
+  <p class="meta">Edge-replicated SQLite database built on libSQL for ultra-low-latency reads.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Up to 500 databases, 9 GB total storage, 1B row reads/mo</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/turso-sqlite.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/turso-sqlite-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Payments &amp; MoR" data-search="stripe payment links payments &amp; mor instant no-code checkout urls with industry-standard 2.9% + $0.30 transaction fees.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Payments &amp; MoR</span>
+    <span class="score">9.4/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Stripe Payment Links</h3>
+  <p class="meta">Instant no-code checkout URLs with industry-standard 2.9% + $0.30 transaction fees.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> $0/month fixed fee; pay only per successful transaction</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/stripe-checkout.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/stripe-checkout-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Automation &amp; Workflows" data-search="n8n workflow automation automation &amp; workflows fair-code visual + javascript/python workflow engine with ai agent nodes.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Automation &amp; Workflows</span>
+    <span class="score">9.4/10</span>
+  </div>
+  <h3 style="margin-top:8px;">n8n Workflow Automation</h3>
+  <p class="meta">Fair-code visual + JavaScript/Python workflow engine with AI agent nodes.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 100% free self-hosted Community Edition; 14-day cloud trial</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/n8n-cloud.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/n8n-cloud-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Email, Growth &amp; Analytics" data-search="resend email, growth &amp; analytics developer-first transactional &amp; broadcast email api with react email templates.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Email, Growth &amp; Analytics</span>
+    <span class="score">9.4/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Resend</h3>
+  <p class="meta">Developer-first transactional &amp; broadcast email API with React Email templates.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 3,000 emails/month free (100 emails/day, 1 custom domain)</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/resend-email.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/resend-email-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI &amp; LLM APIs" data-search="groq cloud api ai &amp; llm apis ultra-low-latency lpu inference for open-weight models with an openai-compatible free tier.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI &amp; LLM APIs</span>
+    <span class="score">9.3/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Groq Cloud API</h3>
+  <p class="meta">Ultra-low-latency LPU inference for open-weight models with an OpenAI-compatible free tier.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free developer tier with daily token/request caps across Llama &amp; Mixtral models</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/groq-cloud.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/groq-cloud-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI Coding &amp; Agent IDEs" data-search="windsurf (codeium) ai coding &amp; agent ides agentic ai ide featuring cascade deep context flows and generous free autocomplete.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI Coding &amp; Agent IDEs</span>
+    <span class="score">9.3/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Windsurf (Codeium)</h3>
+  <p class="meta">Agentic AI IDE featuring Cascade deep context flows and generous free autocomplete.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free forever tier with unlimited basic autocomplete + free prompt credits</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/windsurf-ide.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/windsurf-ide-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Serverless Databases" data-search="neon serverless postgres serverless databases serverless postgres with instant database branching and scale-to-zero compute.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Serverless Databases</span>
+    <span class="score">9.2/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Neon Serverless Postgres</h3>
+  <p class="meta">Serverless Postgres with instant database branching and scale-to-zero compute.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 0.5 GB storage, 100 CU-hours/month compute, 10 branches per project</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/neon-postgres.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/neon-postgres-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Automation &amp; Workflows" data-search="make (integromat) automation &amp; workflows visual no-code workflow builder connecting 1,800+ saas apps and webhooks.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Automation &amp; Workflows</span>
+    <span class="score">9.2/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Make (Integromat)</h3>
+  <p class="meta">Visual no-code workflow builder connecting 1,800+ SaaS apps and webhooks.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 1,000 operations/month free forever, 2 active scenarios</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/make-automation.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/make-automation-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Email, Growth &amp; Analytics" data-search="buttondown email, growth &amp; analytics lightweight markdown newsletter &amp; automation api built for indie hackers and developers.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Email, Growth &amp; Analytics</span>
+    <span class="score">9.2/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Buttondown</h3>
+  <p class="meta">Lightweight Markdown newsletter &amp; automation API built for indie hackers and developers.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free up to 100 subscribers with web archive and RSS support</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/buttondown-email.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/buttondown-email-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI &amp; LLM APIs" data-search="openrouter ai &amp; llm apis unified api gateway routing across 100+ free and paid llms with automatic fallbacks.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI &amp; LLM APIs</span>
+    <span class="score">9.1/10</span>
+  </div>
+  <h3 style="margin-top:8px;">OpenRouter</h3>
+  <p class="meta">Unified API gateway routing across 100+ free and paid LLMs with automatic fallbacks.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Multiple `:free` model endpoints (rate-limited RPM/RPD, $0 required)</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/openrouter.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/openrouter-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Cloud Hosting &amp; Edge" data-search="railway cloud hosting &amp; edge instant infrastructure platform for deploying python agents, databases, and cron workers.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Cloud Hosting &amp; Edge</span>
+    <span class="score">9.1/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Railway</h3>
+  <p class="meta">Instant infrastructure platform for deploying Python agents, databases, and cron workers.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free Trial credit ($5) + $1-$5/mo Hobby usage tier with scale-to-zero</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/railway-cloud.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/railway-cloud-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Payments &amp; MoR" data-search="gumroad payments &amp; mor zero-upfront marketplace for ebooks, notion templates, code boilerplates, and prompts.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Payments &amp; MoR</span>
+    <span class="score">9.1/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Gumroad</h3>
+  <p class="meta">Zero-upfront marketplace for ebooks, Notion templates, code boilerplates, and prompts.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> $0/month fixed cost; flat 10% fee on direct sales</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/gumroad.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/gumroad-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Automation &amp; Workflows" data-search="activepieces automation &amp; workflows mit-licensed open-source zapier &amp; make alternative with native ai workflow pieces.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Automation &amp; Workflows</span>
+    <span class="score">9.1/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Activepieces</h3>
+  <p class="meta">MIT-licensed open-source Zapier &amp; Make alternative with native AI workflow pieces.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 1,000 free tasks/mo on Cloud + unlimited self-hosted MIT Community Edition</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/activepieces.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/activepieces-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Email, Growth &amp; Analytics" data-search="plausible / umami analytics email, growth &amp; analytics privacy-friendly, cookie-free lightweight web analytics under 1 kb script size.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Email, Growth &amp; Analytics</span>
+    <span class="score">9.1/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Plausible / Umami Analytics</h3>
+  <p class="meta">Privacy-friendly, cookie-free lightweight web analytics under 1 KB script size.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Umami Cloud free (100k events/mo) or $0 self-hosted Plausible CE / Umami</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/plausible-ce.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/plausible-ce-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Serverless Databases" data-search="cloudflare d1 serverless databases native serverless sqlite inside cloudflare workers with zero egress fees.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Serverless Databases</span>
+    <span class="score">9.0/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Cloudflare D1</h3>
+  <p class="meta">Native serverless SQLite inside Cloudflare Workers with zero egress fees.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 5 GB storage, 5M rows read/day, 100k rows written/day</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/cloudflare-d1.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/cloudflare-d1-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI Coding &amp; Agent IDEs" data-search="github copilot free ai coding &amp; agent ides native github &amp; vs code ai coding assistant with a permanent free tier.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI Coding &amp; Agent IDEs</span>
+    <span class="score">9.0/10</span>
+  </div>
+  <h3 style="margin-top:8px;">GitHub Copilot Free</h3>
+  <p class="meta">Native GitHub &amp; VS Code AI coding assistant with a permanent free tier.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 2,000 code completions + 50 chat/agent requests per month free</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/github-copilot.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/github-copilot-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Cloud Hosting &amp; Edge" data-search="vercel cloud hosting &amp; edge zero-config next.js and frontend deployment platform with preview urls.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Cloud Hosting &amp; Edge</span>
+    <span class="score">8.9/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Vercel</h3>
+  <p class="meta">Zero-config Next.js and frontend deployment platform with preview URLs.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Hobby plan: 100 GB bandwidth/mo, non-commercial personal projects</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/vercel.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/vercel-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI Coding &amp; Agent IDEs" data-search="replit ai coding &amp; agent ides browser-based cloud ide with ai app builder, instant postgres, and one-click hosting.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI Coding &amp; Agent IDEs</span>
+    <span class="score">8.9/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Replit</h3>
+  <p class="meta">Browser-based cloud IDE with AI app builder, instant Postgres, and one-click hosting.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free Starter tier with public workspaces and limited AI trial checkpoints</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/replit-agent.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/replit-agent-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="Cloud Hosting &amp; Edge" data-search="render cloud hosting &amp; edge managed cloud platform for static sites, python/node web services, and cron jobs.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">Cloud Hosting &amp; Edge</span>
+    <span class="score">8.8/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Render</h3>
+  <p class="meta">Managed cloud platform for static sites, Python/Node web services, and cron jobs.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> 100 GB bandwidth for static sites; 750 free web service hours (spins down idle)</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/render.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/render-alternatives.html">Alternatives</a>
+  </div>
+</article>
+
+<article class="card tool-card" data-cat="AI &amp; LLM APIs" data-search="hugging face inference ai &amp; llm apis serverless inference endpoints for open-source models, embeddings, and spaces hosting.">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+    <span class="meta">AI &amp; LLM APIs</span>
+    <span class="score">8.7/10</span>
+  </div>
+  <h3 style="margin-top:8px;">Hugging Face Inference</h3>
+  <p class="meta">Serverless inference endpoints for open-source models, embeddings, and Spaces hosting.</p>
+  <p style="font-size:0.9rem;"><strong>Free Tier:</strong> Free rate-limited serverless inference + free CPU Spaces</p>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <a class="btn" href="go/huggingface-inference.html" rel="sponsored noopener">Get Free Tier &rarr;</a>
+    <a class="btn btn-secondary" href="alternatives/huggingface-inference-alternatives.html">Alternatives</a>
+  </div>
+</article>
+</div>
+</section>
+
+<section class="banner">
+  <h2>Promote Your DevTool or Micro-SaaS Here</h2>
+  <p>Reach technical founders actively comparing infrastructure and monetization tools. Instant self-serve slot booking.</p>
+  <a class="btn" href="https://hotspot41.gumroad.com/l/lcpwob">Book Featured Slot ($49) &rarr;</a>
+</section>
+
+<section id="comparisons">
+  <h2>Programmatic Head-to-Head Comparisons (42 Pages)</h2>
+  <div class="grid"><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/google-gemini-api-vs-groq-cloud.html">Google Gemini API (AI Studio) vs Groq Cloud API</a></h3><p class="meta">Top pick: Google Gemini API (AI Studio)</p></div><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/google-gemini-api-vs-openrouter.html">Google Gemini API (AI Studio) vs OpenRouter</a></h3><p class="meta">Top pick: Google Gemini API (AI Studio)</p></div><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/google-gemini-api-vs-huggingface-inference.html">Google Gemini API (AI Studio) vs Hugging Face Inference</a></h3><p class="meta">Top pick: Google Gemini API (AI Studio)</p></div><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/groq-cloud-vs-openrouter.html">Groq Cloud API vs OpenRouter</a></h3><p class="meta">Top pick: Groq Cloud API</p></div><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/groq-cloud-vs-huggingface-inference.html">Groq Cloud API vs Hugging Face Inference</a></h3><p class="meta">Top pick: Groq Cloud API</p></div><div class="card"><span class="meta">AI &amp; LLM APIs</span><h3 style="margin:6px 0;"><a href="compare/openrouter-vs-huggingface-inference.html">OpenRouter vs Hugging Face Inference</a></h3><p class="meta">Top pick: OpenRouter</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/supabase-vs-neon-postgres.html">Supabase vs Neon Serverless Postgres</a></h3><p class="meta">Top pick: Supabase</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/supabase-vs-turso-sqlite.html">Supabase vs Turso (libSQL)</a></h3><p class="meta">Top pick: Supabase</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/supabase-vs-cloudflare-d1.html">Supabase vs Cloudflare D1</a></h3><p class="meta">Top pick: Supabase</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/neon-postgres-vs-turso-sqlite.html">Neon Serverless Postgres vs Turso (libSQL)</a></h3><p class="meta">Top pick: Turso (libSQL)</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/neon-postgres-vs-cloudflare-d1.html">Neon Serverless Postgres vs Cloudflare D1</a></h3><p class="meta">Top pick: Neon Serverless Postgres</p></div><div class="card"><span class="meta">Serverless Databases</span><h3 style="margin:6px 0;"><a href="compare/turso-sqlite-vs-cloudflare-d1.html">Turso (libSQL) vs Cloudflare D1</a></h3><p class="meta">Top pick: Turso (libSQL)</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/cloudflare-pages-vs-vercel.html">Cloudflare Pages &amp; Workers vs Vercel</a></h3><p class="meta">Top pick: Cloudflare Pages &amp; Workers</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/cloudflare-pages-vs-render.html">Cloudflare Pages &amp; Workers vs Render</a></h3><p class="meta">Top pick: Cloudflare Pages &amp; Workers</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/cloudflare-pages-vs-railway-cloud.html">Cloudflare Pages &amp; Workers vs Railway</a></h3><p class="meta">Top pick: Cloudflare Pages &amp; Workers</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/vercel-vs-render.html">Vercel vs Render</a></h3><p class="meta">Top pick: Vercel</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/vercel-vs-railway-cloud.html">Vercel vs Railway</a></h3><p class="meta">Top pick: Railway</p></div><div class="card"><span class="meta">Cloud Hosting &amp; Edge</span><h3 style="margin:6px 0;"><a href="compare/render-vs-railway-cloud.html">Render vs Railway</a></h3><p class="meta">Top pick: Railway</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/lemon-squeezy-vs-gumroad.html">Lemon Squeezy vs Gumroad</a></h3><p class="meta">Top pick: Lemon Squeezy</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/lemon-squeezy-vs-stripe-checkout.html">Lemon Squeezy vs Stripe Payment Links</a></h3><p class="meta">Top pick: Lemon Squeezy</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/lemon-squeezy-vs-polar-sh.html">Lemon Squeezy vs Polar.sh</a></h3><p class="meta">Top pick: Lemon Squeezy</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/gumroad-vs-stripe-checkout.html">Gumroad vs Stripe Payment Links</a></h3><p class="meta">Top pick: Stripe Payment Links</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/gumroad-vs-polar-sh.html">Gumroad vs Polar.sh</a></h3><p class="meta">Top pick: Polar.sh</p></div><div class="card"><span class="meta">Payments &amp; MoR</span><h3 style="margin:6px 0;"><a href="compare/stripe-checkout-vs-polar-sh.html">Stripe Payment Links vs Polar.sh</a></h3><p class="meta">Top pick: Polar.sh</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/github-actions-vs-make-automation.html">GitHub Actions vs Make (Integromat)</a></h3><p class="meta">Top pick: GitHub Actions</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/github-actions-vs-n8n-cloud.html">GitHub Actions vs n8n Workflow Automation</a></h3><p class="meta">Top pick: GitHub Actions</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/github-actions-vs-activepieces.html">GitHub Actions vs Activepieces</a></h3><p class="meta">Top pick: GitHub Actions</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/make-automation-vs-n8n-cloud.html">Make (Integromat) vs n8n Workflow Automation</a></h3><p class="meta">Top pick: n8n Workflow Automation</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/make-automation-vs-activepieces.html">Make (Integromat) vs Activepieces</a></h3><p class="meta">Top pick: Make (Integromat)</p></div><div class="card"><span class="meta">Automation &amp; Workflows</span><h3 style="margin:6px 0;"><a href="compare/n8n-cloud-vs-activepieces.html">n8n Workflow Automation vs Activepieces</a></h3><p class="meta">Top pick: n8n Workflow Automation</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/cursor-ai-vs-windsurf-ide.html">Cursor AI Editor vs Windsurf (Codeium)</a></h3><p class="meta">Top pick: Cursor AI Editor</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/cursor-ai-vs-github-copilot.html">Cursor AI Editor vs GitHub Copilot Free</a></h3><p class="meta">Top pick: Cursor AI Editor</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/cursor-ai-vs-replit-agent.html">Cursor AI Editor vs Replit</a></h3><p class="meta">Top pick: Cursor AI Editor</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/windsurf-ide-vs-github-copilot.html">Windsurf (Codeium) vs GitHub Copilot Free</a></h3><p class="meta">Top pick: Windsurf (Codeium)</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/windsurf-ide-vs-replit-agent.html">Windsurf (Codeium) vs Replit</a></h3><p class="meta">Top pick: Windsurf (Codeium)</p></div><div class="card"><span class="meta">AI Coding &amp; Agent IDEs</span><h3 style="margin:6px 0;"><a href="compare/github-copilot-vs-replit-agent.html">GitHub Copilot Free vs Replit</a></h3><p class="meta">Top pick: GitHub Copilot Free</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/resend-email-vs-buttondown-email.html">Resend vs Buttondown</a></h3><p class="meta">Top pick: Resend</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/resend-email-vs-posthog-analytics.html">Resend vs PostHog</a></h3><p class="meta">Top pick: PostHog</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/resend-email-vs-plausible-ce.html">Resend vs Plausible / Umami Analytics</a></h3><p class="meta">Top pick: Resend</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/buttondown-email-vs-posthog-analytics.html">Buttondown vs PostHog</a></h3><p class="meta">Top pick: PostHog</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/buttondown-email-vs-plausible-ce.html">Buttondown vs Plausible / Umami Analytics</a></h3><p class="meta">Top pick: Buttondown</p></div><div class="card"><span class="meta">Email, Growth &amp; Analytics</span><h3 style="margin:6px 0;"><a href="compare/posthog-analytics-vs-plausible-ce.html">PostHog vs Plausible / Umami Analytics</a></h3><p class="meta">Top pick: PostHog</p></div></div>
+</section>
+
+<section id="signals">
+  <h2>Latest Automated Web Signals</h2>
+  <div class="grid"><div class="card"><span class="pill">GitHub &bull; 108733 pts</span><h3 style="margin-top:10px;"><a href="https://github.com/nexu-io/open-design" target="_blank" rel="noopener">nexu-io/open-design — The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motio</a></h3><p class="meta">The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Sha</p></div><div class="card"><span class="pill">Hacker News &bull; 2523 pts</span><h3 style="margin-top:10px;"><a href="https://alpo.ge/remark.pdf" target="_blank" rel="noopener">Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]</a></h3><p class="meta">Trending HN discussion (1742 comments) relevant to developer builders.</p></div><div class="card"><span class="pill">Hacker News &bull; 1868 pts</span><h3 style="margin-top:10px;"><a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/" target="_blank" rel="noopener">Hurried Announcement: Alessandro Masullo GRH</a></h3><p class="meta">Trending HN discussion (859 comments) relevant to developer builders.</p></div><div class="card"><span class="pill">Hacker News &bull; 893 pts</span><h3 style="margin-top:10px;"><a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener">Inkling 2 Mini</a></h3><p class="meta">Trending HN discussion (164 comments) relevant to developer builders.</p></div><div class="card"><span class="pill">Hacker News &bull; 248 pts</span><h3 style="margin-top:10px;"><a href="https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off" target="_blank" rel="noopener">Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day</a></h3><p class="meta">Trending HN discussion (515 comments) relevant to developer builders.</p></div><div class="card"><span class="pill">Hacker News &bull; 211 pts</span><h3 style="margin-top:10px;"><a href="https://ninlive.com/" target="_blank" rel="noopener">NINLIVE: The Nine Inch Nails live archive</a></h3><p class="meta">Trending HN discussion (56 comments) relevant to developer builders.</p></div></div>
+</section>
+
+<script>
+(function () {
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.tool-card');
+  const search = document.getElementById('toolSearch');
+  let activeCat = 'ALL';
+
+  function applyFilter() {
+    const q = (search.value || '').trim().toLowerCase();
+    cards.forEach(card => {
+      const matchesCat = activeCat === 'ALL' || card.dataset.cat === activeCat;
+      const matchesText = !q || card.dataset.search.includes(q);
+      card.style.display = (matchesCat && matchesText) ? '' : 'none';
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCat = btn.dataset.cat;
+      applyFilter();
+    });
+  });
+  search.addEventListener('input', applyFilter);
+})();
+</script>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p><strong>StackPulse AI</strong> &mdash; Automated zero-cost research, promotion &amp; comparison engine running on GitHub Actions. <a href="feed.xml">RSS Feed</a> &bull; <a href="llms.txt">llms.txt</a>. Some outbound links may earn a referral commission at zero cost to you.</p>
+    </div>
+  </footer>
+</body>
+</html>

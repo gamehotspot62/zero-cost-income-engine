@@ -1,0 +1,137 @@
+# StackPulse AI
+> Autonomous Zero-Cost Developer Stack & Free-Tier Intelligence
+
+StackPulse AI is an automated developer infrastructure & SaaS free-tier intelligence hub at https://gamehotspot62.github.io/zero-cost-income-engine/.
+
+## Digital Products & Blueprints
+- [2026 Zero-Cost Cloud & AI Stack Blueprint + Automation Prompt Pack ($19)](https://hotspot41.gumroad.com/l/ryqznu): Complete verified free-tier matrix across 28 developer & AI tools, live market signals, and ready-to-use synthesis prompts.
+- [Free 2026 Developer Free-Tier Cheat Sheet & TCO Calculator (Free ($0))](https://gamehotspot62.github.io/zero-cost-income-engine/products/free-tier-cheatsheet.md): Zero-cost quick-start reference sheet with direct verified free-tier routes and 10k-visitor TCO cost breakdown.
+- [Autonomous GitHub Actions & Make.com AI Agent Blueprint Pack ($19)](https://hotspot41.gumroad.com/l/ryqznu): Step-by-step blueprints to connect GitHub Actions, RSS feeds, and Make.com social auto-distribution at $0 overhead.
+- [StackPulse AI — Weekly Featured Tool & Newsletter Sponsor Slot ($49)](https://hotspot41.gumroad.com/l/lcpwob): Pin your DevTool, SaaS, or AI product across our homepage directory header, RSS feed, and automated developer digest.
+
+## Key Directory Endpoints
+- [Home Directory](https://gamehotspot62.github.io/zero-cost-income-engine/index.html): Searchable catalog of 28 verified free-tier developer tools
+- [Digital Products Storefront](https://gamehotspot62.github.io/zero-cost-income-engine/products/index.html): Cheat sheets, automation templates, and sponsor slots
+- [Latest AI Digest Newsletter](https://gamehotspot62.github.io/zero-cost-income-engine/newsletter/latest-issue.html): Daily ecosystem signal summary
+- [RSS 2.0 Feed](https://gamehotspot62.github.io/zero-cost-income-engine/feed.xml) | [JSON Feed](https://gamehotspot62.github.io/zero-cost-income-engine/feed.json)
+
+## Top Head-to-Head Comparisons
+- [Google Gemini API (AI Studio) vs Groq Cloud API](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-groq-cloud.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Google Gemini API (AI Studio) vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-openrouter.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Google Gemini API (AI Studio) vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Groq Cloud API vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-openrouter.html) — AI & LLM APIs (Top pick: Groq Cloud API)
+- [Groq Cloud API vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: Groq Cloud API)
+- [OpenRouter vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/openrouter-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: OpenRouter)
+- [Supabase vs Neon Serverless Postgres](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-neon-postgres.html) — Serverless Databases (Top pick: Supabase)
+- [Supabase vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-turso-sqlite.html) — Serverless Databases (Top pick: Supabase)
+- [Supabase vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Supabase)
+- [Neon Serverless Postgres vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-turso-sqlite.html) — Serverless Databases (Top pick: Turso (libSQL))
+- [Neon Serverless Postgres vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Neon Serverless Postgres)
+- [Turso (libSQL) vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/turso-sqlite-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Turso (libSQL))
+- [Cloudflare Pages & Workers vs Vercel](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-vercel.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
+- [Cloudflare Pages & Workers vs Render](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-render.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
+- [Cloudflare Pages & Workers vs Railway](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-railway-cloud.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
+
+## All Verified $0 Tools
+- **GitHub Actions** (Automation & Workflows, 9.9/10): Free tier: Unlimited minutes on public repos; 2,000 mins/mo on private repos | Paid: $0.008/min beyond private free quota | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/github-actions.html
+- **Cloudflare Pages & Workers** (Cloud Hosting & Edge, 9.8/10): Free tier: Unlimited sites & bandwidth, 500 builds/mo, 100k Worker requests/day | Paid: $5/mo Workers Paid | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/cloudflare-pages.html
+- **Google Gemini API (AI Studio)** (AI & LLM APIs, 9.6/10): Free tier: Free tier via Google AI Studio (RPM/RPD limits, no credit card required to start) | Paid: $0.10-$0.30 / 1M input tokens (Flash tier) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/google-gemini-api.html
+- **Lemon Squeezy** (Payments & MoR, 9.6/10): Free tier: $0/month fixed cost; 5% + $0.50 only when a sale happens | Paid: Transaction-only pricing (no monthly subscription) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/lemon-squeezy.html
+- **PostHog** (Email, Growth & Analytics, 9.6/10): Free tier: 1M analytics events/mo + 5,000 session recordings + 1M feature flag requests free | Paid: Pay-as-you-go beyond 1M events/month | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/posthog-analytics.html
+- **Supabase** (Serverless Databases, 9.5/10): Free tier: 2 active free projects, 500MB database, 50,000 monthly active users, 5GB egress | Paid: $25/mo Pro plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/supabase.html
+- **Polar.sh** (Payments & MoR, 9.5/10): Free tier: $0/month fixed cost; 4% + $0.40 only when a sale happens | Paid: Transaction-only pricing (no monthly fee) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/polar-sh.html
+- **Cursor AI Editor** (AI Coding & Agent IDEs, 9.5/10): Free tier: Free Hobby tier with limited Agent completions & Tab suggestions | Paid: $20/mo Pro plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/cursor-ai.html
+- **Turso (libSQL)** (Serverless Databases, 9.4/10): Free tier: Up to 500 databases, 9 GB total storage, 1B row reads/mo | Paid: $29/mo Scaler plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/turso-sqlite.html
+- **Stripe Payment Links** (Payments & MoR, 9.4/10): Free tier: $0/month fixed fee; pay only per successful transaction | Paid: 2.9% + $0.30 per card charge (US) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/stripe-checkout.html
+- **n8n Workflow Automation** (Automation & Workflows, 9.4/10): Free tier: 100% free self-hosted Community Edition; 14-day cloud trial | Paid: €20/mo Starter Cloud (or $0 self-hosted) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/n8n-cloud.html
+- **Resend** (Email, Growth & Analytics, 9.4/10): Free tier: 3,000 emails/month free (100 emails/day, 1 custom domain) | Paid: $20/mo Pro plan (50,000 emails) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/resend-email.html
+- **Groq Cloud API** (AI & LLM APIs, 9.3/10): Free tier: Free developer tier with daily token/request caps across Llama & Mixtral models | Paid: $0.05-$0.59 / 1M tokens pay-as-you-go | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/groq-cloud.html
+- **Windsurf (Codeium)** (AI Coding & Agent IDEs, 9.3/10): Free tier: Free forever tier with unlimited basic autocomplete + free prompt credits | Paid: $15/mo Pro plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/windsurf-ide.html
+- **Neon Serverless Postgres** (Serverless Databases, 9.2/10): Free tier: 0.5 GB storage, 100 CU-hours/month compute, 10 branches per project | Paid: $19/mo Launch plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/neon-postgres.html
+- **Make (Integromat)** (Automation & Workflows, 9.2/10): Free tier: 1,000 operations/month free forever, 2 active scenarios | Paid: $9/mo Core plan (10,000 ops) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/make-automation.html
+- **Buttondown** (Email, Growth & Analytics, 9.2/10): Free tier: Free up to 100 subscribers with web archive and RSS support | Paid: $9/mo Basic plan (up to 1,000 subscribers) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/buttondown-email.html
+- **OpenRouter** (AI & LLM APIs, 9.1/10): Free tier: Multiple `:free` model endpoints (rate-limited RPM/RPD, $0 required) | Paid: Pay-per-token pass-through pricing | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/openrouter.html
+- **Railway** (Cloud Hosting & Edge, 9.1/10): Free tier: Free Trial credit ($5) + $1-$5/mo Hobby usage tier with scale-to-zero | Paid: $5/mo Hobby plan (includes $5 usage credit) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/railway-cloud.html
+- **Gumroad** (Payments & MoR, 9.1/10): Free tier: $0/month fixed cost; flat 10% fee on direct sales | Paid: Pay-as-you-earn fee only | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/gumroad.html
+- **Activepieces** (Automation & Workflows, 9.1/10): Free tier: 1,000 free tasks/mo on Cloud + unlimited self-hosted MIT Community Edition | Paid: $5-$10/mo Cloud (or $0 self-hosted) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/activepieces.html
+- **Plausible / Umami Analytics** (Email, Growth & Analytics, 9.1/10): Free tier: Umami Cloud free (100k events/mo) or $0 self-hosted Plausible CE / Umami | Paid: $9/mo Plausible Starter (or $0 self-hosted) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/plausible-ce.html
+- **Cloudflare D1** (Serverless Databases, 9.0/10): Free tier: 5 GB storage, 5M rows read/day, 100k rows written/day | Paid: $5/mo Workers Paid base plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/cloudflare-d1.html
+- **GitHub Copilot Free** (AI Coding & Agent IDEs, 9.0/10): Free tier: 2,000 code completions + 50 chat/agent requests per month free | Paid: $10/mo Pro plan (free for verified students/maintainers) | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/github-copilot.html
+- **Vercel** (Cloud Hosting & Edge, 8.9/10): Free tier: Hobby plan: 100 GB bandwidth/mo, non-commercial personal projects | Paid: $20/seat/mo Pro plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/vercel.html
+- **Replit** (AI Coding & Agent IDEs, 8.9/10): Free tier: Free Starter tier with public workspaces and limited AI trial checkpoints | Paid: $20-$25/mo Core plan | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/replit-agent.html
+- **Render** (Cloud Hosting & Edge, 8.8/10): Free tier: 100 GB bandwidth for static sites; 750 free web service hours (spins down idle) | Paid: $7/mo Starter web service | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/render.html
+- **Hugging Face Inference** (AI & LLM APIs, 8.7/10): Free tier: Free rate-limited serverless inference + free CPU Spaces | Paid: $9/mo PRO plan for higher credits | Link: https://gamehotspot62.github.io/zero-cost-income-engine/go/huggingface-inference.html
+
+## All Programmatic Comparison Pages
+- [Google Gemini API (AI Studio) vs Groq Cloud API](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-groq-cloud.html)
+- [Google Gemini API (AI Studio) vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-openrouter.html)
+- [Google Gemini API (AI Studio) vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-huggingface-inference.html)
+- [Groq Cloud API vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-openrouter.html)
+- [Groq Cloud API vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-huggingface-inference.html)
+- [OpenRouter vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/openrouter-vs-huggingface-inference.html)
+- [Supabase vs Neon Serverless Postgres](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-neon-postgres.html)
+- [Supabase vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-turso-sqlite.html)
+- [Supabase vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-cloudflare-d1.html)
+- [Neon Serverless Postgres vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-turso-sqlite.html)
+- [Neon Serverless Postgres vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-cloudflare-d1.html)
+- [Turso (libSQL) vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/turso-sqlite-vs-cloudflare-d1.html)
+- [Cloudflare Pages & Workers vs Vercel](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-vercel.html)
+- [Cloudflare Pages & Workers vs Render](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-render.html)
+- [Cloudflare Pages & Workers vs Railway](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-railway-cloud.html)
+- [Vercel vs Render](https://gamehotspot62.github.io/zero-cost-income-engine/compare/vercel-vs-render.html)
+- [Vercel vs Railway](https://gamehotspot62.github.io/zero-cost-income-engine/compare/vercel-vs-railway-cloud.html)
+- [Render vs Railway](https://gamehotspot62.github.io/zero-cost-income-engine/compare/render-vs-railway-cloud.html)
+- [Lemon Squeezy vs Gumroad](https://gamehotspot62.github.io/zero-cost-income-engine/compare/lemon-squeezy-vs-gumroad.html)
+- [Lemon Squeezy vs Stripe Payment Links](https://gamehotspot62.github.io/zero-cost-income-engine/compare/lemon-squeezy-vs-stripe-checkout.html)
+- [Lemon Squeezy vs Polar.sh](https://gamehotspot62.github.io/zero-cost-income-engine/compare/lemon-squeezy-vs-polar-sh.html)
+- [Gumroad vs Stripe Payment Links](https://gamehotspot62.github.io/zero-cost-income-engine/compare/gumroad-vs-stripe-checkout.html)
+- [Gumroad vs Polar.sh](https://gamehotspot62.github.io/zero-cost-income-engine/compare/gumroad-vs-polar-sh.html)
+- [Stripe Payment Links vs Polar.sh](https://gamehotspot62.github.io/zero-cost-income-engine/compare/stripe-checkout-vs-polar-sh.html)
+- [GitHub Actions vs Make (Integromat)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/github-actions-vs-make-automation.html)
+- [GitHub Actions vs n8n Workflow Automation](https://gamehotspot62.github.io/zero-cost-income-engine/compare/github-actions-vs-n8n-cloud.html)
+- [GitHub Actions vs Activepieces](https://gamehotspot62.github.io/zero-cost-income-engine/compare/github-actions-vs-activepieces.html)
+- [Make (Integromat) vs n8n Workflow Automation](https://gamehotspot62.github.io/zero-cost-income-engine/compare/make-automation-vs-n8n-cloud.html)
+- [Make (Integromat) vs Activepieces](https://gamehotspot62.github.io/zero-cost-income-engine/compare/make-automation-vs-activepieces.html)
+- [n8n Workflow Automation vs Activepieces](https://gamehotspot62.github.io/zero-cost-income-engine/compare/n8n-cloud-vs-activepieces.html)
+- [Cursor AI Editor vs Windsurf (Codeium)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cursor-ai-vs-windsurf-ide.html)
+- [Cursor AI Editor vs GitHub Copilot Free](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cursor-ai-vs-github-copilot.html)
+- [Cursor AI Editor vs Replit](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cursor-ai-vs-replit-agent.html)
+- [Windsurf (Codeium) vs GitHub Copilot Free](https://gamehotspot62.github.io/zero-cost-income-engine/compare/windsurf-ide-vs-github-copilot.html)
+- [Windsurf (Codeium) vs Replit](https://gamehotspot62.github.io/zero-cost-income-engine/compare/windsurf-ide-vs-replit-agent.html)
+- [GitHub Copilot Free vs Replit](https://gamehotspot62.github.io/zero-cost-income-engine/compare/github-copilot-vs-replit-agent.html)
+- [Resend vs Buttondown](https://gamehotspot62.github.io/zero-cost-income-engine/compare/resend-email-vs-buttondown-email.html)
+- [Resend vs PostHog](https://gamehotspot62.github.io/zero-cost-income-engine/compare/resend-email-vs-posthog-analytics.html)
+- [Resend vs Plausible / Umami Analytics](https://gamehotspot62.github.io/zero-cost-income-engine/compare/resend-email-vs-plausible-ce.html)
+- [Buttondown vs PostHog](https://gamehotspot62.github.io/zero-cost-income-engine/compare/buttondown-email-vs-posthog-analytics.html)
+- [Buttondown vs Plausible / Umami Analytics](https://gamehotspot62.github.io/zero-cost-income-engine/compare/buttondown-email-vs-plausible-ce.html)
+- [PostHog vs Plausible / Umami Analytics](https://gamehotspot62.github.io/zero-cost-income-engine/compare/posthog-analytics-vs-plausible-ce.html)
+
+## All Open-Source Alternatives Pages
+- [Google Gemini API (AI Studio) Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/google-gemini-api-alternatives.html) (Top pick: Groq Cloud API)
+- [Groq Cloud API Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/groq-cloud-alternatives.html) (Top pick: Google Gemini API (AI Studio))
+- [OpenRouter Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/openrouter-alternatives.html) (Top pick: Google Gemini API (AI Studio))
+- [Hugging Face Inference Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/huggingface-inference-alternatives.html) (Top pick: Google Gemini API (AI Studio))
+- [Supabase Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/supabase-alternatives.html) (Top pick: Turso (libSQL))
+- [Neon Serverless Postgres Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/neon-postgres-alternatives.html) (Top pick: Supabase)
+- [Turso (libSQL) Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/turso-sqlite-alternatives.html) (Top pick: Supabase)
+- [Cloudflare D1 Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/cloudflare-d1-alternatives.html) (Top pick: Supabase)
+- [Cloudflare Pages & Workers Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/cloudflare-pages-alternatives.html) (Top pick: Railway)
+- [Vercel Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/vercel-alternatives.html) (Top pick: Cloudflare Pages & Workers)
+- [Render Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/render-alternatives.html) (Top pick: Cloudflare Pages & Workers)
+- [Railway Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/railway-cloud-alternatives.html) (Top pick: Cloudflare Pages & Workers)
+- [Lemon Squeezy Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/lemon-squeezy-alternatives.html) (Top pick: Polar.sh)
+- [Gumroad Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/gumroad-alternatives.html) (Top pick: Lemon Squeezy)
+- [Stripe Payment Links Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/stripe-checkout-alternatives.html) (Top pick: Lemon Squeezy)
+- [Polar.sh Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/polar-sh-alternatives.html) (Top pick: Lemon Squeezy)
+- [GitHub Actions Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/github-actions-alternatives.html) (Top pick: n8n Workflow Automation)
+- [Make (Integromat) Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/make-automation-alternatives.html) (Top pick: GitHub Actions)
+- [n8n Workflow Automation Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/n8n-cloud-alternatives.html) (Top pick: GitHub Actions)
+- [Activepieces Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/activepieces-alternatives.html) (Top pick: GitHub Actions)
+- [Cursor AI Editor Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/cursor-ai-alternatives.html) (Top pick: Windsurf (Codeium))
+- [Windsurf (Codeium) Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/windsurf-ide-alternatives.html) (Top pick: Cursor AI Editor)
+- [GitHub Copilot Free Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/github-copilot-alternatives.html) (Top pick: Cursor AI Editor)
+- [Replit Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/replit-agent-alternatives.html) (Top pick: Cursor AI Editor)
+- [Resend Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/resend-email-alternatives.html) (Top pick: PostHog)
+- [Buttondown Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/buttondown-email-alternatives.html) (Top pick: PostHog)
+- [PostHog Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/posthog-analytics-alternatives.html) (Top pick: Resend)
+- [Plausible / Umami Analytics Alternatives](https://gamehotspot62.github.io/zero-cost-income-engine/alternatives/plausible-ce-alternatives.html) (Top pick: PostHog)

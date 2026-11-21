@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="StackPulse AI Logo">
+  <defs>
+    <linearGradient id="spHexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="spCoreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.38"/>
+      <stop offset="65%" stop-color="#6366f1" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="spPulseGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#070b14" stroke="url(#spHexGrad)" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="24" fill="url(#spCoreGlow)"/>
+  <polygon points="32,9 51,20 51,44 32,55 13,44 13,20" fill="rgba(15,23,42,0.85)" stroke="url(#spHexGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M21 23 L32 17 L43 23" fill="none" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M21 41 L32 47 L43 41" fill="none" stroke="#22c55e" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.7"/>
+  <polyline points="14,34 22,34 27,21 34,44 40,28 45,34 50,34" fill="none" stroke="url(#spPulseGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="34" r="2.6" fill="#38bdf8"/>
+  <circle cx="27" cy="21" r="2.2" fill="#f8fafc"/>
+  <circle cx="34" cy="44" r="2.2" fill="#22c55e"/>
+  <circle cx="50" cy="34" r="2.6" fill="#22c55e"/>
+</svg>

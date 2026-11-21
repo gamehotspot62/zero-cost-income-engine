@@ -1,0 +1,55 @@
+{
+  "title": "2026 Zero-Cost Cloud & AI Stack Blueprint + Automation Prompt Pack",
+  "price_usd": 19,
+  "checkout_url": "https://hotspot41.gumroad.com/l/ryqznu",
+  "compiled_at": "2026-11-21",
+  "tools_included": 28,
+  "signals_included": 8,
+  "markdown_file": "products/zero-cost-stack-blueprint.md",
+  "storefront_html": "products/index.html",
+  "product_count": 4,
+  "products": [
+    {
+      "id": "zero-cost-stack-blueprint",
+      "title": "2026 Zero-Cost Cloud & AI Stack Blueprint + Automation Prompt Pack",
+      "price_usd": 19,
+      "badge": "Best Seller",
+      "description": "Complete verified free-tier matrix across 28 developer & AI tools, live market signals, and ready-to-use synthesis prompts.",
+      "checkout_url": "https://hotspot41.gumroad.com/l/ryqznu",
+      "cta_label": "Buy on Gumroad ($19)",
+      "file": "products/zero-cost-stack-blueprint.md"
+    },
+    {
+      "id": "free-tier-cheatsheet",
+      "title": "Free 2026 Developer Free-Tier Cheat Sheet & TCO Calculator",
+      "price_usd": 0,
+      "badge": "Free Download",
+      "description": "Zero-cost quick-start reference sheet with direct verified free-tier routes and 10k-visitor TCO cost breakdown.",
+      "checkout_url": "free-tier-cheatsheet.md",
+      "cta_label": "Download Free Cheat Sheet",
+      "file": "products/free-tier-cheatsheet.md"
+    },
+    {
+      "id": "ai-agent-workflow-templates",
+      "title": "Autonomous GitHub Actions & Make.com AI Agent Blueprint Pack",
+      "price_usd": 19,
+      "badge": "Automation Pack",
+      "description": "Step-by-step blueprints to connect GitHub Actions, RSS feeds, and Make.com social auto-distribution at $0 overhead.",
+      "checkout_url": "https://hotspot41.gumroad.com/l/ryqznu",
+      "cta_label": "Get Agent Pack ($19)",
+      "file": "products/ai-agent-workflow-templates.md",
+      "secondary_url": "../go/make-automation.html",
+      "secondary_label": "Claim Free Make.com Promo"
+    },
+    {
+      "id": "featured-sponsor-slot",
+      "title": "StackPulse AI \u2014 Weekly Featured Tool & Newsletter Sponsor Slot",
+      "price_usd": 49,
+      "badge": "B2B Sponsorship",
+      "description": "Pin your DevTool, SaaS, or AI product across our homepage directory header, RSS feed, and automated developer digest.",
+      "checkout_url": "https://hotspot41.gumroad.com/l/lcpwob",
+      "cta_label": "Book Sponsor Slot ($49)",
+      "file": ""
+    }
+  ]
+}

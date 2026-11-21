@@ -1,0 +1,33 @@
+# StackPulse AI
+> Autonomous Zero-Cost Developer Stack & Free-Tier Intelligence
+
+StackPulse AI is an automated developer infrastructure & SaaS free-tier intelligence hub at https://gamehotspot62.github.io/zero-cost-income-engine/.
+
+## Digital Products & Blueprints
+- [2026 Zero-Cost Cloud & AI Stack Blueprint + Automation Prompt Pack ($19)](https://hotspot41.gumroad.com/l/ryqznu): Complete verified free-tier matrix across 28 developer & AI tools, live market signals, and ready-to-use synthesis prompts.
+- [Free 2026 Developer Free-Tier Cheat Sheet & TCO Calculator (Free ($0))](https://gamehotspot62.github.io/zero-cost-income-engine/products/free-tier-cheatsheet.md): Zero-cost quick-start reference sheet with direct verified free-tier routes and 10k-visitor TCO cost breakdown.
+- [Autonomous GitHub Actions & Make.com AI Agent Blueprint Pack ($19)](https://hotspot41.gumroad.com/l/ryqznu): Step-by-step blueprints to connect GitHub Actions, RSS feeds, and Make.com social auto-distribution at $0 overhead.
+- [StackPulse AI — Weekly Featured Tool & Newsletter Sponsor Slot ($49)](https://hotspot41.gumroad.com/l/lcpwob): Pin your DevTool, SaaS, or AI product across our homepage directory header, RSS feed, and automated developer digest.
+
+## Key Directory Endpoints
+- [Home Directory](https://gamehotspot62.github.io/zero-cost-income-engine/index.html): Searchable catalog of 28 verified free-tier developer tools
+- [Digital Products Storefront](https://gamehotspot62.github.io/zero-cost-income-engine/products/index.html): Cheat sheets, automation templates, and sponsor slots
+- [Latest AI Digest Newsletter](https://gamehotspot62.github.io/zero-cost-income-engine/newsletter/latest-issue.html): Daily ecosystem signal summary
+- [RSS 2.0 Feed](https://gamehotspot62.github.io/zero-cost-income-engine/feed.xml) | [JSON Feed](https://gamehotspot62.github.io/zero-cost-income-engine/feed.json)
+
+## Top Head-to-Head Comparisons
+- [Google Gemini API (AI Studio) vs Groq Cloud API](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-groq-cloud.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Google Gemini API (AI Studio) vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-openrouter.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Google Gemini API (AI Studio) vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/google-gemini-api-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: Google Gemini API (AI Studio))
+- [Groq Cloud API vs OpenRouter](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-openrouter.html) — AI & LLM APIs (Top pick: Groq Cloud API)
+- [Groq Cloud API vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/groq-cloud-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: Groq Cloud API)
+- [OpenRouter vs Hugging Face Inference](https://gamehotspot62.github.io/zero-cost-income-engine/compare/openrouter-vs-huggingface-inference.html) — AI & LLM APIs (Top pick: OpenRouter)
+- [Supabase vs Neon Serverless Postgres](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-neon-postgres.html) — Serverless Databases (Top pick: Supabase)
+- [Supabase vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-turso-sqlite.html) — Serverless Databases (Top pick: Supabase)
+- [Supabase vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/supabase-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Supabase)
+- [Neon Serverless Postgres vs Turso (libSQL)](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-turso-sqlite.html) — Serverless Databases (Top pick: Turso (libSQL))
+- [Neon Serverless Postgres vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/neon-postgres-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Neon Serverless Postgres)
+- [Turso (libSQL) vs Cloudflare D1](https://gamehotspot62.github.io/zero-cost-income-engine/compare/turso-sqlite-vs-cloudflare-d1.html) — Serverless Databases (Top pick: Turso (libSQL))
+- [Cloudflare Pages & Workers vs Vercel](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-vercel.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
+- [Cloudflare Pages & Workers vs Render](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-render.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
+- [Cloudflare Pages & Workers vs Railway](https://gamehotspot62.github.io/zero-cost-income-engine/compare/cloudflare-pages-vs-railway-cloud.html) — Cloud Hosting & Edge (Top pick: Cloudflare Pages & Workers)
